@@ -1,7 +1,7 @@
 import React from "react";
 import $style from "../styles/style";
 
-import truecaller from "../assets/Image1.png";
+import truecaller from "../assets/image1.png";
 import mendanta from "../assets/image3.png";
 import adani from "../assets/image2.png";
 import milkbasket from "../assets/image3.png";
