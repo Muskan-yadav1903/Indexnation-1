@@ -13,14 +13,14 @@ export default function Strategy() {
 
         <div style={styles.strategyTopRow}>
           <div>
-            <p style={styles.strategySmallTitle}>How We Work</p>
-            <h2 style={styles.strategyMainTitle}>
+            <p style={styles.h4Regularcolor}>How We Work</p>
+            <h2 style={styles.DisplayTextcolor}>
               Where Strategy <br /> Meets Action
             </h2>
           </div>
 
           <p style={styles.strategyTopDescription}>
-            Our <span style={styles.strategyLinkText}>Reputation Index Framework</span> aligns
+            Our <span style={styles.blueText}>Reputation Index Framework</span> aligns
             communications to measurable enterprise value. It brings coherence to
             voice, discipline to timing and integrity to message.
           </p>
@@ -32,11 +32,23 @@ export default function Strategy() {
             <img src={outcomeImg} alt="" style={styles.strategyCardImage} />
             <div>
               <h3 style={styles.strategyCardTitle}>The Outcome</h3>
-              <ul style={styles.strategyList}>
-                <li>A story investors understand</li>
-                <li>A reputation they rely on</li>
-                <li>A leadership presence they respect</li>
-                <li>A valuation supported by belief, not noise</li>
+              <ul style={styles.bodyLargeLight}>
+                <li style={styles.trustListItem}>
+                  <div style={styles.trustCheck}>✓</div>
+                  A story investors understand
+                </li>
+                <li style={styles.trustListItem}>
+                  <div style={styles.trustCheck}>✓</div>
+                  A reputation they rely on
+                </li>
+                <li style={styles.trustListItem}>
+                  <div style={styles.trustCheck}>✓</div>
+                  A leadership presence they respect
+                </li>
+                <li style={styles.trustListItem}>
+                  <div style={styles.trustCheck}>✓</div>
+                  A valuation supported by belief, not noise
+                </li>
               </ul>
             </div>
           </div>
@@ -45,11 +57,23 @@ export default function Strategy() {
             <img src={whyImg} alt="" style={styles.strategyCardImage} />
             <div>
               <h3 style={styles.strategyCardTitle}>Why IndexNation</h3>
-              <ul style={styles.strategyList}>
-                <li>Markets reward clarity</li>
-                <li>Investors reward consistency</li>
-                <li>History rewards those who are understood</li>
-                <li>We are the steady hand behind visible leadership</li>
+              <ul style={styles.bodyLargeLight}>
+                <li style={styles.trustListItem}>
+                  <div style={styles.trustCheck}>✓</div>
+                  Markets reward clarity
+                </li>
+                <li style={styles.trustListItem}>
+                  <div style={styles.trustCheck}>✓</div>
+                  Investors reward consistency
+                </li>
+                <li style={styles.trustListItem}>
+                  <div style={styles.trustCheck}>✓</div>
+                  History rewards those who are understood
+                </li>
+                <li style={styles.trustListItem}>
+                  <div style={styles.trustCheck}>✓</div>
+                  We are the steady hand behind visible leadership
+                </li>
               </ul>
             </div>
           </div>
@@ -58,11 +82,23 @@ export default function Strategy() {
             <img src={commitmentImg} alt="" style={styles.strategyCardImage} />
             <div>
               <h3 style={styles.strategyCardTitle}>The IndexNation Commitment</h3>
-              <ul style={styles.strategyList}>
-                <li>Integrity in thinking</li>
-                <li>Precision in language</li>
-                <li>Strength in execution</li>
-                <li>Trust that compounds, year after year</li>
+              <ul style={styles.bodyLargeLight}>
+                <li style={styles.trustListItem}>
+                  <div style={styles.trustCheck}>✓</div>
+                  Integrity in thinking
+                </li>
+                <li style={styles.trustListItem}>
+                  <div style={styles.trustCheck}>✓</div>
+                  Precision in language
+                </li>
+                <li style={styles.trustListItem}>
+                  <div style={styles.trustCheck}>✓</div>
+                  Strength in execution
+                </li>
+                <li style={styles.trustListItem}>
+                  <div style={styles.trustCheck}>✓</div>
+                  Trust that compounds, year after year
+                </li>
               </ul>
             </div>
           </div>
@@ -71,11 +107,23 @@ export default function Strategy() {
             <img src={buildImg} alt="" style={styles.strategyCardImage} />
             <div>
               <h3 style={styles.strategyCardTitle}>Let’s Build Something Enduring</h3>
-              <ul style={styles.strategyList}>
-                <li>A story investors understand</li>
-                <li>A reputation they rely on</li>
-                <li>A leadership presence they respect</li>
-                <li>A valuation supported by belief, not noise</li>
+              <ul style={styles.bodyLargeLight}>
+                <li style={styles.trustListItem}>
+                  <div style={styles.trustCheck}>✓</div>
+                  A story investors understand
+                </li>
+                <li style={styles.trustListItem}>
+                  <div style={styles.trustCheck}>✓</div>
+                  A reputation they rely on
+                </li>
+                <li style={styles.trustListItem}>
+                  <div style={styles.trustCheck}>✓</div>
+                  A leadership presence they respect
+                </li>
+                <li style={styles.trustListItem}>
+                  <div style={styles.trustCheck}>✓</div>
+                  A valuation supported by belief, not noise
+                </li>
               </ul>
             </div>
           </div>

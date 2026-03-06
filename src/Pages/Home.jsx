@@ -5,6 +5,7 @@ import Clients from "../Components/Clients";
 import Provide from "../Components/Provide";
 import Sector from "../Components/Sector";
 import Strategy from "../Components/Strategy";
+import InfluenceIndex from "../Components/InfluenceIndex";
 
 import $style from "../styles/style";
 import "../styles/responsive.css";
@@ -58,6 +59,7 @@ export default function Home() {
       <Provide />
       <Sector />
       <Strategy />
+      <InfluenceIndex />
     </div>
   );
 }

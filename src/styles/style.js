@@ -1,3 +1,5 @@
+import InfluenceIndex from "../Components/InfluenceIndex"
+
 const $style = {
 // styles.js
   // --- DISPLAY TEXT 1 ---
@@ -396,20 +398,6 @@ navList: {
   },
 
 
-//   heroImage: {
-//   width: "100%",
-//   height: "70vh",
-//   objectFit: "cover",
-// },
-
-// heroContent: {
-//   position: "absolute",
-//   top: "55%",
-//   left: "20px",
-//   right: "20px",
-//   transform: "translateY(-50%)",
-//   maxWidth: "900px",
-// },
   heroContent: {
     position: "absolute",
     top: "60%",
@@ -468,8 +456,6 @@ trustRight: {
   height: "350px",
   display: "flex",
   justifyContent: "center",
-  // borderRadius: "20%",   
-  // borderRadius: "40px 40px 40px 40px",
   overflow: "hidden", 
 },
 
@@ -481,12 +467,6 @@ handshake: {
   maxWidth: "720px",
   borderRadius: "10%",
 },
-
-// trustImage: {
-//   width: "900px",
-//   maxWidth: "500px",
-//   borderRadius: "20px",
-// },
 
 trustList: {
   marginTop: "40px",
@@ -506,8 +486,8 @@ trustListItem: {
 },
 
 trustCheck: {
-  width: "28px",
-  height: "28px",
+  width: "22px",
+  height: "22px",
   borderRadius: "50%",
   backgroundColor: "#2F80ED",
   display: "flex",
@@ -518,25 +498,6 @@ trustCheck: {
   
 },
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
 
 // -----Clients ----------
 
@@ -564,6 +525,13 @@ blueText: {
   fontFamily: "Inter, sans-serif",
   color: "#176FCE",
   fontWeight: "700",
+
+
+  // fontfamily: "Inter",
+fontsize: "38.246px",
+fontstyle: "normal",
+// fontweight: "700",
+lineheight: "120%", /* 45.896px */
 },
 
 logoRowWrapper: {
@@ -587,73 +555,7 @@ clientLogo: {
   height: "35px",
   objectFit: "contain",
 },
-
-
-
-
-
-
-
-
-
-
-  // scrollWrapper: {
-  //   overflow: "hidden",
-  //   position: "relative",
-  // },
-
-  // scrollTrack: {
-  //   display: "flex",
-  //   width: "fit-content",
-  //   animation: "scroll 25s linear infinite",
-  // },
-
-  // logoWrapper: {
-  //   padding: "0 60px",
-  //   flexShrink: 0,
-  //   filter: "grayscale(100%)",
-  //   opacity: "0.5",
-  //   transition: "all 0.4s ease",
-  // },
-
-  // logoImage: {
-  //   height: "40px",
-  //   objectFit: "contain",
-  // },
-
-  // fadeLeft: {
-  //   position: "absolute",
-  //   top: 0,
-  //   left: 0,
-  //   width: "120px",
-  //   height: "100%",
-  //   background: "linear-gradient(to right, #0b0b0d, transparent)",
-  //   zIndex: 2,
-  // },
-
-  // fadeRight: {
-  //   position: "absolute",
-  //   top: 0,
-  //   right: 0,
-  //   width: "120px",
-  //   height: "100%",
-  //   background: "linear-gradient(to left, #0b0b0d, transparent)",
-  //   zIndex: 2,
-  // },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
 
  /* ================= Provide ================= */
 
@@ -729,10 +631,10 @@ clientLogo: {
   /* ===== Big Rounded Card Section ===== */
 
   bigCardSection: {
-    background: "#9CBBDD",
-    borderRadius: "55px",
-    padding: "90px 120px",
-    // boxShadow: "0 0 60px rgba(0,0,0,0.6)",
+    background: "linear-gradient(135deg, #9CBBDD 0%, #8AA5C8 100%)",
+    borderRadius: "40px",
+    padding: "80px 100px",
+    boxShadow: "0 20px 60px rgba(0, 0, 0, 0.15)",
   },
 
   cardGrid: {
@@ -744,13 +646,18 @@ clientLogo: {
 
   card1: {
     backgroundColor: "#0f0f14",
-    padding: "38px",
+    padding: "24px",
     // width: "58px",
     // height: "45px",
-    borderRadius: "28px",
+    borderRadius: "20px",
     border: "1px solid #1a1a22",
     textAlign: "left",
     transition: "all 0.4s ease",
+    boxShadow: "0 12px 40px rgba(0, 0, 0, 0.5)",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    minHeight: "280px",
   },
 
   cardIcon1: {
@@ -766,153 +673,31 @@ clientLogo: {
     marginBottom: "22px",
   },
 
-  // cardTitle: {
-  //   fontSize: "18px",
-  //   fontWeight: "600",
-  //   color: "#ffffff",
-  //   marginBottom: "15px",
-  // },
-
-  // cardText: {
-  //   fontSize: "14px",
-  //   color: "#9ca3af",
-  //   lineHeight: "1.6",
-  //   marginBottom: "25px",
-  // },
-
+ 
   learnBtn: {
     width: "100%",
     // padding: "16px",
-    borderRadius: "8px",
+    borderRadius: "12px",
     border: "none",
     backgroundColor: "#3C3C43",
     color: "#d1d5db",
     cursor: "pointer",
-    transition: "0.3s",
-
+    transition: "all 0.3s ease",
+    boxShadow: "0 6px 20px rgba(0, 0, 0, 0.3)",
     display: "flex",
-padding: "16.372px 14.553px",
-justifyContent: "center",
-alignItems: "center",
-gap: "9.095px",
-alignSelf: "stretch",
+    padding: "12px 16px",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: "9.095px",
+    alignSelf: "stretch",
+    fontWeight: "500",
   },
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // ------sector--------
-//  section: {
-//     backgroundColor: "#fff",
-//     padding: "100px 20px",
-//     display: "flex",
-//     justifyContent: "center",
-//   },
-
-//   // outerContainer: {
-//   //   background: "linear-gradient(145deg, #0f0f0f, #0a0a0a)",
-//   //   borderRadius: "40px",
-//   //   padding: "80px 40px",
-//   //   width: "100%",
-//   //   maxWidth: "1400px",
-//   // },
-
-//   container: {
-//     maxWidth: "1200px",
-//     margin: "0 auto",
-//     textAlign: "center",
-//     color: "#fff",
-//   },
-
-//   // title: {
-//   //   fontSize: "48px",
-//   //   fontWeight: "700",
-//   //   marginBottom: "15px",
-//   // },
-
-//   // subtitle: {
-//   //   color: "#9ca3af",
-//   //   maxWidth: "650px",
-//   //   margin: "0 auto 60px",
-//   //   lineHeight: "1.6",
-//   //   fontSize: "15px",
-//   // },
-
-//   grid: {
-//     display: "grid",
-//     gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-//     gap: "25px",
-//   },
-
-//   // 🔥 Card Alignment Fixed Here
-//   card: {
-//     background: "linear-gradient(145deg, #1a1a1a, #141414)",
-//     border: "1px solid #2a2a2a",
-//     padding: "35px 25px",
-//     borderRadius: "18px",
-//     textAlign: "left",   // ✅ left aligned
-//     transition: "all 0.3s ease",
-//     cursor: "pointer",
-//   },
-
-//   iconBox: {
-//     width: "48px",
-//     height: "48px",
-//     backgroundColor: "#ffffff",
-//     borderRadius: "12px",
-//     display: "flex",
-//     alignItems: "center",
-//     justifyContent: "center",
-//     marginBottom: "20px", // ❌ removed auto center
-//   },
-
-//   icon: {
-//     width: "22px",
-//     height: "22px",
-//   },
-
-//   // cardTitle: {
-//   //   fontSize: "18px",
-//   //   fontWeight: "600",
-//   //   marginBottom: "12px",
-//   // },
-
-//   cardText: {
-//     fontSize: "14px",
-//     color: "#9ca3af",
-//     lineHeight: "1.6",
-//   },
-
-//   moreCard: {
-//     backgroundColor: "#3faa4b",
-//     borderRadius: "18px",
-//     display: "flex",
-//     justifyContent: "center",
-//     alignItems: "center",
-//     fontWeight: "bold",
-//     fontSize: "18px",
-//     cursor: "pointer",
-//     color: "#fff",
-//   },
-
-
-
 
 sectorsSection:{
   backgroundColor:"#fff",
-  padding:"120px 20px",
+  padding:"90px 120px",
   display:"flex",
   justifyContent:"center"
 },
@@ -923,78 +708,60 @@ container:{
   textAlign:"center"
 },
 
-// sectorsTitle:{
-//   fontSize:"48px",
-//   fontWeight:"700",
-//   marginBottom:"15px",
-//   color:"#111"
-// },
-
-// sectorsSubtitle:{
-//   color:"#555",
-//   maxWidth:"650px",
-//   margin:"0 auto 70px",
-//   lineHeight:"1.6",
-//   fontSize:"15px"
-// },
-
 grid:{
   display:"grid",
   gridTemplateColumns:"repeat(4,1fr)",
-  gap:"25px"
+  gap:"20px"
 },
 
 card:{
   background:"#CACACD",
-  padding:"28px",
-  borderRadius:"16px",
-  textAlign:"left"
+  padding:"16px",
+  borderRadius:"8px",
+  textAlign:"left",
+  minHeight:"180px",
+  display:"flex",
+  flexDirection:"column",
+  margin:"0 4px"
 },
 
 iconBox:{
-  width:"42px",
-  height:"42px",
+  width:"32px",
+  height:"32px",
   backgroundColor:"#176FCE",
-  borderRadius:"8px",
+  borderRadius:"4px",
   display:"flex",
   alignItems:"center",
   justifyContent:"center",
-  marginBottom:"18px"
+  marginBottom:"14px"
 },
 
 icon:{
-  width:"20px",
-  height:"20px",
+  width:"18px",
+  height:"18px",
   filter:"invert(1)"
 },
 
-
-
  h4Boldcolor: {
     fontFamily: "Inter, sans-serif",
-    fontSize: "22px",
+    fontSize: "15px",
     color: "var(--Black, #111)",
     fontStyle: "normal",
     fontWeight: "700",
-    lineHeight: "120%",
+    lineHeight: "1.3",
+    marginBottom: "6px",
+    textAlign: "left"
   },
-
 
   h4Lightcolor: {
     fontFamily: "Inter, sans-serif",
-    fontSize: "22px",
+    fontSize: "13px",
     color: "#757095",
     fontStyle: "normal",
     fontWeight: "300",
-    lineHeight: "120%",
+    lineHeight: "1.4",
+    textAlign: "left"
   },
-
-// cardTitle:{
-//   fontSize:"18px",
-//   fontWeight:"600",
-//   marginBottom:"10px",
-//   color:"#111"
-// },
 
 cardText:{
   fontSize:"13px",
@@ -1005,35 +772,28 @@ cardText:{
 moreCard:{
   backgroundColor:"#3faa4b",
   fontFamily: "Inter, sans-serif",
-  borderRadius:"16px",
+  borderRadius:"8px",
   display:"flex",
   justifyContent:"center",
   alignItems:"center",
   color:"#fff",
-  fontSize:"20px",
-  fontWeight:"600"
+  fontSize:"14px",
+  fontWeight:"600",
+  minHeight:"200px",
+  flexDirection:"column"
 },
 
 moreNumber:{
   fontFamily: "Inter, sans-serif",
-  fontSize:"28px",
-  marginBottom:"5px",
+  fontSize:"20px",
+  marginBottom:"4px",
   textAlign:"center"
 },
-
-
-
-
-
-
-
-
-
 
   // ---------- STRATEGY PAGE UNIQUE STYLES ----------
 
 strategySection: {
-  backgroundColor: "#e5e5e5",
+  backgroundColor: "#fff",
   padding: "100px 20px",
 },
 
@@ -1063,15 +823,11 @@ strategyMainTitle: {
 },
 
 strategyTopDescription: {
+  fontFamily: "Inter, sans-serif",
   maxWidth: "450px",
   fontSize: "15px",
   color: "#444",
   lineHeight: "1.6",
-},
-
-strategyLinkText: {
-  color: "#2563eb",
-  fontWeight: "500",
 },
 
 strategyGrid: {
@@ -1085,41 +841,112 @@ strategyCard: {
   borderRadius: "20px",
   padding: "25px",
   display: "flex",
-  gap: "20px",
+  gap: "30px",
   alignItems: "flex-start",
   border: "1px solid #ddd",
 },
 
 strategyCardImage: {
   width: "160px",
-  height: "160px",
+  height: "180px",
   borderRadius: "20px",
   objectFit: "cover",
 },
 
 strategyCardTitle: {
   fontSize: "22px",
+  fontFamily: "Inter, sans-serif",
   color: "#2563eb",
   fontWeight: "700",
   marginBottom: "15px",
 },
 
-strategyList: {
-  listStyleType: "disc",
-  paddingLeft: "18px",
-  color: "#444",
-  lineHeight: "1.8",
-  fontSize: "14px",
-},
+// trustCheck: {
+//   width: "22px",
+//   height: "22px",
+//   borderRadius: "50%",
+//   backgroundColor: "#2F80ED",
+//   display: "flex",
+//   alignItems: "center",
+//   justifyContent: "center",
+//   color: "#FFFFFF",
+//   fontSize: "14px",
 
 
+// width: 10.376px;
+// height: 7.655px;
+// aspect-ratio: 61/45;
+// },
 
 
+// ---- InfluenceIndex ---------
 
+ influenceSection: {
+    background: "#BCD1E8",
+    padding: "80px",
+    borderRadius: "25px",
+    width: "90%",
+    margin: "100px auto",
+  },
 
+  influenceHeader: {
+    display: "flex",
+    justifyContent: "space-between",
+    marginBottom: "50px",
+    alignItems: "center",
+  },
 
+  influenceSmall: {
+    fontSize: "14px",
+    color: "#333",
+    marginBottom: "10px",
+  },
 
+  influenceTitle: {
+    fontSize: "42px",
+    fontWeight: "700",
+    color: "#111",
+  },
 
+  influenceTextBox: {
+    maxWidth: "420px",
+  },
+
+  influenceText: {
+    fontSize: "15px",
+    color: "#333",
+    marginBottom: "10px",
+  },
+
+  influenceHighlight: {
+  fontFamily: "Inter, sans-serif",
+    color: "#1f6feb",
+    fontWeight: "600",
+  },
+
+  influenceCardBox: {
+    background: "#F6F6F6",
+    borderRadius: "20px",
+    padding: "50px",
+    display: "grid",
+    gridTemplateColumns: "repeat(3,1fr)",
+    gap: "40px",
+  },
+
+  influenceCard: {
+    display: "flex",
+    flexDirection: "column",
+    gap: "10px",
+    color: "#222",
+  },
+
+  icon: {
+    width: "36px",
+    height: "36px",
+    background: "#2E5B9A",
+    borderRadius: "8px",
+    marginBottom: "10px",
+  },
 
   
 };

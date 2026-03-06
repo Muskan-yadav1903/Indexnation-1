@@ -139,9 +139,9 @@ export default function Sectors() {
 
         </p>
 
-        <div className="grid" style={styles.grid}>
+        <div className="sectorGrid" style={styles.grid}>
 
-          <div style={styles.card}>
+          <div className="sectorCard" style={styles.card}>
             <div style={styles.iconBox}>
               <img src={people} alt="" style={styles.icon}/>
             </div>
@@ -151,7 +151,7 @@ export default function Sectors() {
             </p>
           </div>
 
-          <div style={styles.card}>
+          <div className="sectorCard" style={styles.card}>
             <div style={styles.iconBox}>
               <img src={pen} alt="" style={styles.icon}/>
             </div>
@@ -161,7 +161,7 @@ export default function Sectors() {
             </p>
           </div>
 
-          <div style={styles.card}>
+          <div className="sectorCard" style={styles.card}>
             <div style={styles.iconBox}>
               <img src={headset} alt="" style={styles.icon}/>
             </div>
@@ -171,7 +171,7 @@ export default function Sectors() {
             </p>
           </div>
 
-          <div style={styles.card}>
+          <div className="sectorCard" style={styles.card}>
             <div style={styles.iconBox}>
               <img src={briefcase} alt="" style={styles.icon}/>
             </div>
@@ -181,7 +181,7 @@ export default function Sectors() {
             </p>
           </div>
 
-          <div style={styles.card}>
+          <div className="sectorCard" style={styles.card}>
             <div style={styles.iconBox}>
               <img src={gem} alt="" style={styles.icon}/>
             </div>
@@ -191,7 +191,7 @@ export default function Sectors() {
             </p>
           </div>
 
-          <div style={styles.card}>
+          <div className="sectorCard" style={styles.card}>
             <div style={styles.iconBox}>
               <img src={lighting} alt="" style={styles.icon}/>
             </div>
@@ -201,7 +201,7 @@ export default function Sectors() {
             </p>
           </div>
 
-          <div style={styles.card}>
+          <div className="sectorCard" style={styles.card}>
             <div style={styles.iconBox}>
               <img src={manufacturing} alt="" style={styles.icon}/>
             </div>
@@ -211,7 +211,7 @@ export default function Sectors() {
             </p>
           </div>
 
-          <div style={styles.moreCard}>
+          <div className="sectorCard" style={styles.moreCard}>
             <div>
               <div style={styles.moreNumber}>+4</div>
               <div>More</div>
