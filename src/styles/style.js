@@ -940,7 +940,7 @@ strategyCardTitle: {
     color: "#222",
   },
 
-  icon: {
+  icon2: {
     width: "36px",
     height: "36px",
     background: "#2E5B9A",

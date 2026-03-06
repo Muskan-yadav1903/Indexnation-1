@@ -28,7 +28,7 @@ export default function InfluenceIndex() {
 
         {/* Row 1 */}
         <div style={$style.influenceCard}>
-          <div style={$style.icon}></div>
+          <div style={$style.icon2}></div>
           <h3>Analyst perception</h3>
           <p style={$style.h4Light}>
             Shaping how analysts interpret performance, strategy,
@@ -37,7 +37,7 @@ export default function InfluenceIndex() {
         </div>
 
         <div style={$style.influenceCard}>
-          <div style={$style.icon}></div>
+          <div style={$style.icon2}></div>
           <h3>Shareholder confidence</h3>
           <p>
             Building sustained investor confidence through
@@ -46,7 +46,7 @@ export default function InfluenceIndex() {
         </div>
 
         <div style={$style.influenceCard}>
-          <div style={$style.icon}></div>
+          <div style={$style.icon2}></div>
           <h3>Media sentiment</h3>
           <p>
             Influencing media narratives to reflect credibility
@@ -57,7 +57,7 @@ export default function InfluenceIndex() {
         {/* Row 2 */}
 
         <div style={$style.influenceCard}>
-          <div style={$style.icon}></div>
+          <div style={$style.icon2}></div>
           <h3>Reputation risk defence</h3>
           <p>
             Protecting brand reputation through proactive
@@ -66,7 +66,7 @@ export default function InfluenceIndex() {
         </div>
 
         <div style={$style.influenceCard}>
-          <div style={$style.icon}></div>
+          <div style={$style.icon2}></div>
           <h3>Leadership authority</h3>
           <p>
             Positioning leadership as credible, trusted,
@@ -75,7 +75,7 @@ export default function InfluenceIndex() {
         </div>
 
         <div style={$style.influenceCard}>
-          <div style={$style.icon}></div>
+          <div style={$style.icon2}></div>
           <h3>Public trust signals</h3>
           <p>
             Reinforcing trust through transparent and
