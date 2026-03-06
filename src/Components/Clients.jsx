@@ -22,6 +22,7 @@ export default function Clients() {
   const LogoRow = ({ direction }) => (
     <div style={$style.logoRowWrapper}>
       <div
+        className="logo-track"
         style={{
           ...$style.logoTrack,
           animation:
@@ -60,7 +61,7 @@ export default function Clients() {
         <div style={$style.clientsContainer}>
 
           <h2 style={$style.clientsHeading}>
-            We work with <span style={$style.blueText}>companies</span> shaping <br/>
+            We work with <span style={$style.blueText}>companies</span> shaping 
             India’s growth story and global ambition.
           </h2>
 

@@ -132,14 +132,14 @@ export default function Sectors() {
 
         <p style={styles.h4Regularcolor}>
           Business isn't one size fits all. Every industry requires a custom solution.
-          Learn <br /> more about how we've helped businesses in your industry by clicking below. <br />  
+          Learn more about how we've helped businesses in your industry by clicking below. <br />  
           <br /> 
           <br />
           <br />
 
         </p>
 
-        <div style={styles.grid}>
+        <div className="grid" style={styles.grid}>
 
           <div style={styles.card}>
             <div style={styles.iconBox}>

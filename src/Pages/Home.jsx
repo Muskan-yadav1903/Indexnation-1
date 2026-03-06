@@ -7,26 +7,29 @@ import Sector from "../Components/Sector";
 import Strategy from "../Components/Strategy";
 
 import $style from "../styles/style";
+import "../styles/responsive.css";
 
 export default function Home() {
   return (
     <div style={$style.h4Regular}>
       <Navbar />
-      
 
-      {/* Background Image */}
-      <img
-        src={heroImage}
-        alt="Hero"
-        style={$style.heroImage}
-      />
+      {/* Hero section wrapper (relative positioning) */}
+      <div className="hero-wrapper" style={{ position: "relative" }}>
+        {/* Background Image */}
+        <img
+          src={heroImage}
+          alt="Hero"
+          className="hero-image"
+          style={$style.heroImage}
+        />
 
-      {/* Dark Overlay */}
-      <div style={$style.overlay}></div>
+        {/* Dark Overlay */}
+        <div style={$style.overlay}></div>
 
-      {/* Content */}
-      <div style={$style.heroContent}>
-        <h1 style={$style.DisplayText1Bold}>
+        {/* Content */}
+        <div className="hero-content" style={$style.heroContent}>
+        <h1 className="hero-title" style={$style.DisplayText1Bold}>
           Where trust becomes capital & where perception becomes performance.
         </h1>
 
@@ -40,18 +43,16 @@ export default function Home() {
         </p>
 
         <div style={$style.h4Regular}>
-            <p style={$style.readMore}>
-          Read More ↓
-        </p>
+          <p style={$style.readMore}>Read More ↓</p>
         </div>
 
         <div style={$style.h4Regular}>
-            <button style={$style.primaryButton}>
-          Register Now
-        </button>
+          <button style={$style.primaryButton}>Get an Appointment</button>
         </div>
-        
       </div>
+
+      </div> {/* end hero-wrapper */}
+
       <TrustSection />
       <Clients />
       <Provide />
@@ -60,3 +61,4 @@ export default function Home() {
     </div>
   );
 }
+

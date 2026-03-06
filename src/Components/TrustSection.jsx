@@ -6,16 +6,16 @@ import handshake from "../assets/handshake.png";
 export default function TrustSection() {
   return (
     <section style={$style.trustSection}>
-      <div style={$style.trustContainer}>
+      <div className="trust-container" style={$style.trustContainer}>
 
         {/* LEFT SIDE */}
-        <div style={$style.trustLeft}>
+        <div className="trust-left" style={$style.trustLeft}>
           <h2 style={$style.displayText2Bold}>
-            Engineering Trust in <br />
+            Engineering Trust in 
             High-Stakes Markets
           </h2>
 
-           <p style={{ ...$style.h4Regular, marginTop: "30px", color: "#3C3C43" }}>
+           <p style={{ ...$style.h4Regular, marginTop: "10px", color: "#3C3C43" }}>
             Index Nation exists to serve leaders who recognise this truth. <br />
             <br />
             We partner with high-growth companies and publicly listed enterprises to build trust, deepen investor belief, and align perception with performance through disciplined communication and intelligent influence.

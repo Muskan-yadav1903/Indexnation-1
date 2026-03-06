@@ -170,9 +170,9 @@ const $style = {
     fontFamily: "Inter, sans-serif",
     margin: "5px",
     color: "#F6F6F6",
-    fontSize: "22px",
+    fontSize: "15px",
     fontStyle: "normal",
-    fontWeight: "400",
+    fontWeight: "100",
     
     lineHeight: "120%",
   },
@@ -309,13 +309,15 @@ const $style = {
 
   // ----Buttons Color ------
    primaryButton: {
+  fontFamily: "Inter, sans-serif",
     backgroundColor: "#2F80ED",
     color: "#FFFFFF",
-    margin: "30px",
-    padding: "16px 32px",
+    margin: "10px",
+    // left: "10px",
+    padding: "14px 20px",
     borderRadius: "40px",
     border: "none",
-    fontSize: "16px",
+    fontSize: "14px",
     cursor: "pointer",
     
   },
@@ -330,7 +332,7 @@ const $style = {
   fontFamily: "Inter, sans-serif",
     margin: "5px",
     color: "#F6F6F6",
-    fontSize: "22px",
+    fontSize: "15px",
     fontStyle: "normal",
     fontWeight: "400",
     lineHeight: "120%",
@@ -344,31 +346,37 @@ const $style = {
 
 navbar: {
   position: "fixed",  
-  top: "30px",
-  left: "50px",
-  width: "85%",
-  height: "45px",
+  top: "20px",
+  left: "20px",
+  right: "20px",
+  width: "calc(100% - 40px)",
+  height: "auto",
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
-  padding: "20px 80px",
+  padding: "18px 70px",
   background: "rgba(0, 0, 0, 0.4)",  
   borderRadius: "50px",
   backdropFilter: "blur(6px)",        
   zIndex: 1000,
+  flexWrap: "wrap",
 },
 
 logo: {
   width: "64px",
-height: "60px",
+  height: "auto",
+  minWidth: "50px",
 },
 navList: {
   display: "flex",
   alignItems: "center",
-  gap: "40px",
+  gap: "20px",
   listStyle: "none",
   margin: 0,
   padding: 0,
+  flex: 1,
+  justifyContent: "flex-end",
+  flexWrap: "wrap",
 },
 
 
@@ -376,8 +384,9 @@ navList: {
   heroImage: {
     position: "relative",
     width: "100%",
-    height: "830px",
+    height: "660px",
     objectFit: "cover",
+    objectPosition: "center",
     display: "block",
   },
   overlay: {
@@ -386,6 +395,21 @@ navList: {
     background: "rgba(0, 0, 0, 0.65)",
   },
 
+
+//   heroImage: {
+//   width: "100%",
+//   height: "70vh",
+//   objectFit: "cover",
+// },
+
+// heroContent: {
+//   position: "absolute",
+//   top: "55%",
+//   left: "20px",
+//   right: "20px",
+//   transform: "translateY(-50%)",
+//   maxWidth: "900px",
+// },
   heroContent: {
     position: "absolute",
     top: "60%",
@@ -393,15 +417,18 @@ navList: {
     transform: "translateY(-50%)",
     color: "#ffffff",
     maxWidth: "950px",
+    right: "120px",
   },
 
   DisplayText1Bold: {
     fontFamily: "Inter, sans-serif",
-    fontSize: "72px",
+    fontSize: "52px",
     fontWeight: "bold",
     lineHeight: "1.2",
     marginBottom: "30px",
     color: "#ffffff",
+    wordWrap: "break-word",
+    overflow: "hidden",
   },
   
 
@@ -413,32 +440,46 @@ trustSection: {
   // background: "var(--Black, #111)",
   // backgroundColor: "#0B0B0B",
   color: "#111",
-  padding: "120px 80px",
+  padding: "90px 60px",
+  width: "100%",
+  // height: "auto",
 },
 
 trustContainer: {
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
-  gap: "95px",
+  gap: "75px",
   flexWrap: "wrap",
+  width: "100%",
 },
 
 trustLeft: {
   flex: 1,
-  minWidth: "700px",
-  maxWidth: "500px",
+  minWidth: "300px",
+  maxWidth: "600px",
+  width: "100%",
 },
 
 trustRight: {
   flex: 1,
-  Width: "300px",
-  height: "500px",
+  width: "100%",
+  minWidth: "300px",
+  height: "350px",
   display: "flex",
   justifyContent: "center",
   // borderRadius: "20%",   
   // borderRadius: "40px 40px 40px 40px",
   overflow: "hidden", 
+},
+
+handshake: {
+  width: "100%",
+  height: "100%",
+  objectFit: "cover",
+  objectPosition: "center",
+  maxWidth: "720px",
+  borderRadius: "10%",
 },
 
 // trustImage: {
@@ -451,15 +492,17 @@ trustList: {
   marginTop: "40px",
   padding: 0,
   listStyle: "none",
+  
 },
 
 trustListItem: {
   display: "flex",
   alignItems: "center",
-  margin: "25px",
+  margin: "15px 0",
   color: "#3C3C43",
-  gap: "18px",
-  marginBottom: "20px",
+  gap: "15px",
+  marginBottom: "12px",
+  
 },
 
 trustCheck: {
@@ -472,6 +515,7 @@ trustCheck: {
   justifyContent: "center",
   color: "#FFFFFF",
   fontSize: "14px",
+  
 },
 
 

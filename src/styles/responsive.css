@@ -1,0 +1,667 @@
+/* Base styles for responsive elements */
+.hamburger {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+  z-index: 1100;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hamburger span {
+  display: block;
+  width: 16px;
+  height: 2px;
+  background: #ffffff;
+  border-radius: 999px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ================= SMALL MOBILE (320px - 480px) ================= */
+
+@media (max-width: 480px) {
+  /* NAVBAR */
+  .navbar {
+    padding: 12px 16px !important;
+    width: calc(100% - 32px) !important;
+    z-index: 1101 !important;
+    position: relative !important;
+  }
+
+  .logo img {
+    width: 48px !important;
+    height: auto !important;
+  }
+
+  .hamburger {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 999px !important;
+    background: rgba(0, 0, 0, 0.55) !important;
+    cursor: pointer !important;
+    z-index: 1101 !important;
+    position: relative !important;
+    opacity: 1 !important;
+  }
+
+  .hamburger span {
+    display: block !important;
+    width: 14px !important;
+    height: 2px !important;
+    background: #ffffff !important;
+    border-radius: 999px !important;
+    transition: transform 0.2s ease, opacity 0.2s ease !important;
+  }
+
+  .hamburger.open span:nth-child(1) {
+    transform: translateY(4px) rotate(45deg) !important;
+  }
+
+  .hamburger.open span:nth-child(2) {
+    opacity: 0 !important;
+  }
+
+  .hamburger.open span:nth-child(3) {
+    transform: translateY(-4px) rotate(-45deg) !important;
+  }
+
+  .nav-list {
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    width: 50% !important;
+    height: 100vh !important;
+    margin: 0 !important;
+    padding: 24px 20px !important;
+    background: rgba(10, 10, 10, 0.98) !important;
+    backdrop-filter: blur(10px) !important;
+    border-radius: 0 !important;
+    list-style: none !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 20px !important;
+    display: none !important;
+    transform: translateX(100%) !important;
+    transition: transform 0.4s ease-in-out !important;
+    z-index: 999 !important;
+    overflow-y: auto !important;
+  }
+
+  .nav-list li {
+    width: 100% !important;
+    text-align: left !important;
+  }
+
+  .nav-list li button {
+    width: 100% !important;
+  }
+
+  .nav-list.active {
+    display: flex !important;
+    transform: translateX(0) !important;
+  }
+
+  /* HERO SECTION */
+  .hero-image {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+  }
+
+  .hero-content {
+    top: 40% !important;
+    left: 12px !important;
+    right: 12px !important;
+    max-width: 100%;
+  }
+
+  .hero-title {
+    font-size: 22px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .hero-content p {
+    font-size: 12px !important;
+  }
+
+  .readMore {
+    margin-bottom: 16px !important;
+  }
+
+  .primaryButton {
+    padding: 10px 16px !important;
+    font-size: 12px !important;
+    margin: 8px 0 !important;
+  }
+}
+
+/* ================= MOBILE (481px - 768px) ================= */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* NAVBAR */
+  .navbar {
+    padding: 14px 20px !important;
+    width: calc(100% - 40px) !important;
+    left: 20px !important;
+    right: 20px !important;
+  }
+
+  .logo img {
+    width: 56px !important;
+    height: auto !important;
+  }
+
+  .hamburger {
+    display: flex !important;
+    width: 32px !important;
+    height: 32px !important;
+    opacity: 1 !important;
+  }
+
+  .navbar:hover .hamburger {
+    opacity: 1 !important;
+  }
+
+  .hamburger span {
+    width: 18px !important;
+    height: 2px !important;
+  }
+
+  .hamburger.open span:nth-child(1) {
+    transform: translateY(4px) rotate(45deg);
+  }
+
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.open span:nth-child(3) {
+    transform: translateY(-4px) rotate(-45deg);
+  }
+
+  .nav-list {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 50% !important;
+    height: 100vh !important;
+    margin: 0 !important;
+    padding: 24px 20px !important;
+    background: rgba(10, 10, 10, 0.98) !important;
+    backdrop-filter: blur(10px) !important;
+    border-radius: 0 !important;
+    list-style: none !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 20px !important;
+    display: none !important;
+    transform: translateX(-100%) !important;
+    transition: transform 0.4s ease-in-out !important;
+    z-index: 999 !important;
+    overflow-y: auto !important;
+  }
+
+  .nav-list.active {
+    display: flex !important;
+    transform: translateX(0) !important;
+  }
+
+  .nav-list li {
+    width: 100% !important;
+    text-align: left !important;
+  }
+
+  .nav-list li button {
+    width: 100% !important;
+  }
+
+  /* HERO SECTION */
+  .hero-image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  .hero-content {
+    left: 16px !important;
+    right: 16px !important;
+    max-width: 100%;
+    top: 50% !important;
+  }
+
+  .hero-title {
+    font-size: 28px !important;
+    line-height: 1.3 !important;
+    margin-bottom: 16px !important;
+  }
+
+  .hero-content p {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+  }
+
+  .readMore {
+    margin-bottom: 20px !important;
+  }
+
+  .primaryButton {
+    padding: 12px 18px !important;
+    font-size: 13px !important;
+    margin: 10px 0 !important;
+  }
+
+  /* TRUST SECTION */
+  .trust-section {
+    padding: 50px 20px !important;
+    
+  }
+
+  .trust-container {
+    flex-direction: column !important;
+    gap: 24px;
+    /* border-radius: "10%"; */
+
+  }
+
+  .trust-left {
+    min-width: 100% !important;
+    max-width: 100% !important;
+    order: 1 !important;
+    
+  }
+
+  .trust-right {
+    width: 100% !important;
+    height: 160px !important;
+    order: 2 !important;
+    /* border-radius: "10%"; */
+
+    
+  }
+
+  /* hide other sections on mobile so sector appears directly after trust */
+  .clients-section,
+  .what-section {
+    display: none !important;
+  }
+
+  .sectors-section {
+    margin-top: 20px !important;
+    
+  }
+
+  /* Trust section typography */
+  .trust-left h2 {
+    font-size: 28px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 16px !important;
+  }
+
+  .trust-left p {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    margin-top: 16px !important;
+  }
+
+  .trust-list-item {
+    margin: 12px 0 !important;
+    gap: 12px !important;
+  }
+
+  .trust-check {
+    width: 22px !important;
+    height: 22px !important;
+    font-size: 11px !important;
+  }
+
+  /* Trust section typography */
+  .trust-left h2 {
+    font-size: 26px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 16px !important;
+  }
+
+  .trust-left p {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+    margin-top: 16px !important;
+  }
+
+  .trust-list-item {
+    margin: 15px 0 !important;
+    gap: 12px !important;
+  }
+
+  .trust-check {
+    width: 24px !important;
+    height: 24px !important;
+    font-size: 12px !important;
+  }
+
+  /* CLIENT LOGOS */
+  .clients-section {
+    padding: 40px 20px !important;
+  }
+
+  .logo-track {
+    gap: 24px !important;
+  }
+
+  /* PROVIDE/WHAT WE DO CARDS */
+  .what-section {
+    padding: 60px 20px !important;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+
+  /* SECTORS GRID */
+  .sectors-section {
+    padding: 60px 20px !important;
+  }
+
+  .grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+
+  /* STRATEGY GRID */
+  .strategy-section {
+    padding: 60px 20px !important;
+  }
+
+  .strategy-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    transition: all 0.3s ease !important;
+  }
+
+  .hamburger {
+    display: flex !important;
+    cursor: pointer !important;
+    opacity: 1 !important;
+  }
+
+  .navbar:hover .hamburger {
+    opacity: 1 !important;
+  }
+
+  .hamburger.active {
+    opacity: 1 !important;
+  }
+
+  .nav-list {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 50% !important;
+    height: 100vh !important;
+    margin: 0 !important;
+    padding: 24px 20px !important;
+    background: rgba(10, 10, 10, 0.98) !important;
+    backdrop-filter: blur(10px) !important;
+    border-radius: 0 !important;
+    list-style: none !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 20px !important;
+    display: none !important;
+    transform: translateX(-100%) !important;
+    transition: transform 0.4s ease-in-out !important;
+    z-index: 1000 !important;
+    overflow-y: auto !important;
+    box-shadow: -4px 0 16px rgba(0, 0, 0, 0.3) !important;
+  }
+
+  .nav-list.active {
+    display: flex !important;
+    transform: translateX(0) !important;
+  }
+
+  .close-btn {
+    align-self: flex-end !important;
+    padding: 8px !important;
+    cursor: pointer !important;
+    margin-right: -8px !important;
+    /* height: 20px !important; */
+  }
+}
+
+/* Menu overlay style for mobile */
+body.menu-open {
+  overflow: hidden !important;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ================= TABLET (769px - 1024px) ================= */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* NAVBAR - adjust padding for tablet */
+  .navbar {
+    padding: 16px 40px !important;
+    width: calc(100% - 80px) !important;
+    left: 40px !important;
+    right: 40px !important;
+  }
+
+  .logo img {
+    width: 56px !important;
+  }
+
+  .nav-list {
+    gap: 16px !important;
+  }
+
+  .nav-list li {
+    font-size: 14px !important;
+  }
+
+  /* HERO SECTION */
+  .hero-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  .hero-content {
+    left: 40px !important;
+    right: 40px !important;
+    top: 55% !important;
+  }
+
+  .hero-title {
+    font-size: 40px !important;
+  }
+
+  .hero-content p {
+    font-size: 15px !important;
+  }
+
+  /* SECTIONS */
+  .trust-section {
+    padding: 60px 40px !important;
+  }
+
+  .trust-left {
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .trust-container {
+    flex-direction: column !important;
+    gap: 40px;
+  }
+
+  .trust-right {
+    width: 100% !important;
+    height: 180px !important;
+  }
+
+  /* hide non‑trust sections so sector appears immediately */
+  .clients-section,
+  .what-section {
+    display: none !important;
+  }
+
+  .sectors-section {
+    margin-top: 20px !important;
+  }
+
+  /* Trust section typography */
+  .trust-left h2 {
+    font-size: 44px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 28px !important;
+  }
+
+  .trust-left p {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    margin-top: 28px !important;
+  }
+
+  .trust-list-item {
+    margin: 20px 0 !important;
+    gap: 16px !important;
+  }
+
+  .trust-check {
+    width: 28px !important;
+    height: 28px !important;
+    font-size: 14px !important;
+  }
+
+  .what-section {
+    padding: 80px 40px !important;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 24px;
+  }
+
+  .sectors-section {
+    padding: 80px 40px !important;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 24px;
+  }
+
+  .strategy-section {
+    padding: 80px 40px !important;
+  }
+
+  .strategy-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 24px;
+  }
+
+  .clients-section {
+    padding: 60px 40px !important;
+  }
+}
+
+/* ================= DESKTOP (1025px+) ================= */
+
+@media (min-width: 1025px) {
+  .hamburger {
+    display: none !important;
+  }
+
+  .nav-list {
+    display: flex !important;
+    position: relative !important;
+    gap: 20px !important;
+    background: none !important;
+    padding: 0 !important;
+    backdrop-filter: none !important;
+    border-radius: 0 !important;
+  }
+
+  /* SECTIONS */
+  .trust-section {
+    padding: 100px 80px;
+  }
+
+  .trust-container {
+    flex-direction: row;
+    gap: 80px;
+  }
+
+  .trust-left {
+    min-width: 600px;
+    max-width: 450px;
+  }
+
+  .trust-right {
+    flex: 1;
+    height: 350px;
+  }
+
+  /* Trust section typography - desktop uses default styles from style.js */
+
+  .what-section {
+    padding: 120px 80px;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+  }
+
+  .sector-section {
+    padding: 120px 80px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+  }
+
+  .strategy-section {
+    padding: 120px 80px;
+  }
+
+  .strategy-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+  }
+}
+

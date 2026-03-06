@@ -26,7 +26,7 @@ export default function Strategy() {
           </p>
         </div>
 
-        <div style={styles.strategyGrid}>
+        <div className="strategy-grid" style={styles.strategyGrid}>
 
           <div style={styles.strategyCard}>
             <img src={outcomeImg} alt="" style={styles.strategyCardImage} />
