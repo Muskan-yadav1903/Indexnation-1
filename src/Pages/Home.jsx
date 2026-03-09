@@ -6,6 +6,12 @@ import Provide from "../Components/Provide";
 import Sector from "../Components/Sector";
 import Strategy from "../Components/Strategy";
 import InfluenceIndex from "../Components/InfluenceIndex";
+import ExpansionGrid from "../Components/ExpansionGrid";
+import Performance from "../Components/Performance";
+import ResolvedCases from "../Components/ResolvedCases";
+import Partners from "../Components/Partners";
+import Contact from "../Components/Contact";
+import Footer from "../Components/Footer";
 
 import $style from "../styles/style";
 import "../styles/responsive.css";
@@ -60,6 +66,12 @@ export default function Home() {
       <Sector />
       <Strategy />
       <InfluenceIndex />
+      <ExpansionGrid />
+      <Performance />
+      <ResolvedCases />
+      <Partners />
+      <Contact />
+      <Footer />
     </div>
   );
 }

@@ -2,19 +2,18 @@ import $style from "../styles/style";
 
 export default function InfluenceIndex() {
   return (
-    <section style={$style.influenceSection}>
+    <section style={$style.influenceSection} className="influence-section">
       
       {/* Top Content */}
-      <div style={$style.influenceHeader}>
+      <div style={$style.influenceHeader} className="influence-header">
         <div>
           <p style={$style.h4Regularcolor}>Our Strategic Edge</p>
           <h2 style={$style.DisplayTextcolor}>The Influence Index</h2>
         </div>
 
-        <div style={$style.influenceTextBox}>
+        <div style={$style.influenceTextBox} className="influence-text-box">
           <p style={$style.h4Regularcolor}>
-            A proprietary measurement model that evaluates real influence
-            and tracks its movement over time across:
+            A proprietary measurement model that evaluates real influence and tracks its movement over time across:
           </p>
 
           <p style={$style.influenceHighlight}>
@@ -24,31 +23,31 @@ export default function InfluenceIndex() {
       </div>
 
       {/* Cards Container */}
-      <div style={$style.influenceCardBox}>
+      <div style={$style.influenceCardBox} className="influence-card-box">
 
         {/* Row 1 */}
-        <div style={$style.influenceCard}>
+        <div style={$style.influenceCard} className="influence-card">
           <div style={$style.icon2}></div>
           <h3>Analyst perception</h3>
-          <p style={$style.h4Light}>
+          <p style={$style.h4Lightcolor}>
             Shaping how analysts interpret performance, strategy,
             and long-term value.
           </p>
         </div>
 
-        <div style={$style.influenceCard}>
+        <div style={$style.influenceCard} className="influence-card">
           <div style={$style.icon2}></div>
           <h3>Shareholder confidence</h3>
-          <p>
+          <p style={$style.h4Lightcolor}>
             Building sustained investor confidence through
             clarity and consistency.
           </p>
         </div>
 
-        <div style={$style.influenceCard}>
+        <div style={$style.influenceCard} className="influence-card">
           <div style={$style.icon2}></div>
           <h3>Media sentiment</h3>
-          <p>
+          <p style={$style.h4Lightcolor}>
             Influencing media narratives to reflect credibility
             and strategic intent.
           </p>
@@ -56,28 +55,28 @@ export default function InfluenceIndex() {
 
         {/* Row 2 */}
 
-        <div style={$style.influenceCard}>
+        <div style={$style.influenceCard} className="influence-card">
           <div style={$style.icon2}></div>
           <h3>Reputation risk defence</h3>
-          <p>
+          <p style={$style.h4Lightcolor}>
             Protecting brand reputation through proactive
             risk and issue management.
           </p>
         </div>
 
-        <div style={$style.influenceCard}>
+        <div style={$style.influenceCard} className="influence-card">
           <div style={$style.icon2}></div>
           <h3>Leadership authority</h3>
-          <p>
+          <p style={$style.h4Lightcolor}>
             Positioning leadership as credible, trusted,
             and forward-thinking voices.
           </p>
         </div>
 
-        <div style={$style.influenceCard}>
+        <div style={$style.influenceCard} className="influence-card">
           <div style={$style.icon2}></div>
           <h3>Public trust signals</h3>
-          <p>
+          <p style={$style.h4Lightcolor}>
             Reinforcing trust through transparent and
             dependable communication.
           </p>

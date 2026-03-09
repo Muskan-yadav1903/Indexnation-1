@@ -894,6 +894,7 @@ strategyCardTitle: {
     justifyContent: "space-between",
     marginBottom: "50px",
     alignItems: "center",
+    flexWrap: "wrap",
   },
 
   influenceSmall: {
@@ -929,6 +930,8 @@ strategyCardTitle: {
     borderRadius: "20px",
     padding: "50px",
     display: "grid",
+    fontFamily: "Inter, sans-serif",
+    /* grid layout managed by responsive CSS */
     gridTemplateColumns: "repeat(3,1fr)",
     gap: "40px",
   },
@@ -937,7 +940,7 @@ strategyCardTitle: {
     display: "flex",
     flexDirection: "column",
     gap: "10px",
-    color: "#222",
+    color: "#111",
   },
 
   icon2: {
@@ -948,7 +951,837 @@ strategyCardTitle: {
     marginBottom: "10px",
   },
 
+   h4Lightcolor: {
+    fontFamily: "Inter, sans-serif",
+    fontSize: "16px",
+    fontStyle: "normal",
+    fontWeight: "200",
+    lineHeight: "120%",
+    color: "#2E2F34"
+  },
+
+
+
+
+
+
+  // -------- Expansion Grid Section --------
+
+expansionSection: {
+  backgroundColor: "#F6F6F6",
+  padding: "120px 20px",
+},
+
+expansionContainer: {
+  maxWidth: "1000px",
+  margin: "0 auto",
+  textAlign: "center",
+},
+
+// expansionTitle: {
+//   fontFamily: "Inter, sans-serif",
+//   fontSize: "48px",
+//   fontWeight: "700",
+//   color: "#111",
+//   lineHeight: "1.2",
+//   marginBottom: "20px",
+// },
+
+expansionSubtitle: {
+  fontFamily: "Inter, sans-serif",
+  fontSize: "15px",
+  color: "#666",
+  maxWidth: "760px",
+  margin: "0 auto 60px",
+  lineHeight: "1.6",
+},
+
+expansionImageWrapper: {
+  width: "100%",
+  borderRadius: "38px",
+  overflow: "hidden",
+  // outline: "2px solid #057dcd",
+  // backgroundColor: "#2F80ED"
+},
+
+expansionImage: {
+  width: "100%",
+  height: "520px",
+  objectFit: "cover",
+  borderRadius: "28px",
+},
   
+
+
+
+/* PERFORMANCE SECTION */
+
+performanceSection:{
+  background:"#F6F6F6",
+  padding:"100px 90px"
+},
+
+performanceContainer:{
+  maxWidth:"1200px",
+  margin:"0 auto",
+  display:"flex",
+  justifyContent:"space-between",
+  alignItems:"center",
+  gap:"60px"
+},
+
+performanceLeft:{
+  flex:1,
+  maxWidth:"520px"
+},
+
+performanceTitle:{
+  fontFamily:"Inter, sans-serif",
+  fontSize:"44px",
+  fontWeight:"700",
+  lineHeight:"1.2",
+  // marginBottom:"10px",
+  color:"#111"
+},
+
+performanceText:{
+  fontFamily:"Inter, sans-serif",
+  fontSize:"15px",
+  lineHeight:"1.6",
+  color:"#555",
+  marginBottom:"20px"
+},
+
+
+/* RIGHT CARD */
+
+performanceCard:{
+  flex:1,
+  height:"400px",
+  width: "260px",
+  background:"#fff",
+  borderRadius:"20px",
+  position:"relative",
+  padding:"20px"
+},
+
+/* IMAGE STYLE */
+
+performanceImg:{
+  /* fluid sizing: width controlled by parent/card */
+  width:"100%",
+  height:"auto",
+  objectFit:"cover",
+  // borderRadius:"6px",
+  position:"relative",
+  zIndex:"2"
+},
+
+/* LEFT IMAGE */
+
+imageBoxLeft:{
+  position:"absolute",
+  left:"40px",
+  bottom:"50px"
+},
+
+blueBg:{
+  position:"absolute",
+  left:"-8px",
+  bottom:"18px",
+  width:"100%",
+  height:"100%",
+  background:"#7EA6D8",
+  zIndex:"1"
+},
+
+/* RIGHT IMAGE */
+
+imageBoxRight:{
+  position:"absolute",
+  right:"70px",
+  top:"40px"
+},
+
+greenBg:{
+  position:"absolute",
+  right:"-8px",
+  bottom:"-10px",
+  width:"100%",
+  height:"100%",
+  background:"#9CD3A8",
+  zIndex:"1"
+},
+
+
+
+
+
+
+
+/* ===== RESOLVED CASES ===== */
+
+casesSection:{
+  background:"#2E2F34",
+  padding:"100px 20px",
+  textAlign:"center"
+},
+
+casesContainer:{
+  maxWidth:"1000px",
+  margin:"0 auto"
+},
+
+casesSubtitle:{
+  fontFamily:"Inter, sans-serif",
+  fontSize:"15px",
+  color:"#bfc3c9",
+  marginBottom:"40px"
+},
+
+
+/* CARD */
+
+caseCard:{
+  display:"flex",
+  borderRadius:"20px",
+  overflow:"hidden",
+  marginBottom:"30px"
+},
+
+
+/* LEFT BOX */
+
+caseLeft:{
+  flex:"1",
+  background:"#9FB2C7",
+  padding:"60px",
+  textAlign:"left",
+
+  display:"flex",
+  flexDirection:"column",
+  justifyContent:"center"
+},
+bodyLargeLightcolor: {
+    fontFamily: "Inter, sans-serif",
+    color: "#3C3C43", 
+    margin: "12px",
+    fontSize: "18px",
+    fontStyle: "normal",
+    fontWeight: "300",
+    lineHeight: "120%",
+  },
+  h2Boldcolor: {
+    fontFamily: "Inter, sans-serif",
+    color: "#111",
+    fontSize: "36px",
+    fontStyle: "normal",
+    fontWeight: "700",
+    lineHeight: "120%",
+  },
+
+caseButton:{
+  fontFamily:"Inter, sans-serif",
+  width:"140px",
+  padding:"10px 14px",
+  borderRadius:"25px",
+  border:"1px solid #666",
+  background:"#fff",
+  cursor:"pointer"
+},
+
+
+/* IMAGE */
+
+caseRight:{
+  flex:"1"
+},
+
+caseImage:{
+  width:"100%",
+  height:"100%",
+  objectFit:"cover"
+},
+
+
+/* SLIDER CONTROLS */
+
+sliderControls:{
+  display:"flex",
+  justifyContent:"center",
+  alignItems:"center",
+  gap:"20px"
+},
+
+arrowIcon:{
+  width:"34px",
+  height:"34px",
+  cursor:"pointer"
+},
+
+dotsWrapper:{
+  display:"flex",
+  gap:"8px"
+},
+
+dot:{
+  width:"8px",
+  height:"8px",
+  borderRadius:"50%",
+  background:"#777"
+},
+
+activeDot:{
+  width:"8px",
+  height:"8px",
+  borderRadius:"50%",
+  background:"#fff"
+},
+
+
+
+
+// ----- Partners ----------
+
+partnersSection: {
+  background: "#111",
+  padding: "90px 0",
+},
+
+partnersContainer: {
+  width: "85%",
+  margin: "0 auto",
+  textAlign: "center",
+},
+
+partnersHeading: {
+  fontFamily: "Inter, sans-serif",
+  fontSize: "28px",
+  color: "#555",
+  marginBottom: "60px",
+  fontWeight: "400",
+},
+
+partnerBlue: {
+  fontFamily: "Inter, sans-serif",
+  color: "#176FCE",
+  fontWeight: "600",
+},
+
+partnerRowWrapper: {
+  overflow: "hidden",
+  width: "100%",
+  marginBottom: "40px",
+},
+
+partnerTrack: {
+  display: "flex",
+  gap: "100px",
+  width: "max-content",
+},
+
+partnerLogoWrapper: {
+  filter: "grayscale(100%)",
+  opacity: "0.6",
+},
+
+partnerLogo: {
+  height: "35px",
+  objectFit: "contain",
+},
+
+
+
+
+
+
+
+// CONTACT SECTION
+
+contactSection:{
+  background:"#f3f3f3",
+  padding:"100px 20px"
+},
+
+contactContainer:{
+  maxWidth:"1100px",
+  margin:"0 auto",
+  textAlign:"center"
+},
+
+// contactTitle:{
+//   fontSize:"42px",
+//   fontWeight:"700",
+//   color:"#333",
+//   marginBottom:"10px"
+// },
+
+contactSubtitle:{
+  fontFamily: "Inter, sans-serif",
+  color:"#777",
+  marginBottom:"50px"
+},
+
+contactCard:{
+  display:"flex",
+  gap:"40px",
+  background:"#fff",
+  padding:"40px",
+  borderRadius:"14px",
+  border:"1px solid #ddd"
+},
+
+/* LEFT FORM */
+
+contactFormSide:{
+  flex:"1",
+  textAlign:"left"
+},
+
+contactFormTitle:{
+  fontSize:"20px",
+  fontWeight:"600",
+  marginBottom:"10px"
+},
+
+contactText:{
+  fontFamily: "Inter, sans-serif",
+  fontSize:"14px",
+  color:"#666",
+  marginBottom:"20px"
+},
+
+nameRow:{
+  display:"flex",
+  gap:"10px"
+},
+
+inputHalf:{
+  fontFamily: "Inter, sans-serif",
+  flex:"1",
+  padding:"12px",
+  borderRadius:"6px",
+  border:"1px solid #ddd",
+  marginBottom:"10px"
+},
+
+inputFull:{
+  fontFamily: "Inter, sans-serif",
+  width:"100%",
+  padding:"12px",
+  borderRadius:"6px",
+  border:"1px solid #ddd",
+  marginBottom:"10px"
+},
+
+textarea:{
+  fontFamily: "Inter, sans-serif",
+  width:"100%",
+  padding:"12px",
+  borderRadius:"6px",
+  border:"1px solid #ddd",
+  marginBottom:"15px"
+},
+
+submitBtn:{
+  fontFamily: "Inter, sans-serif",
+  width:"100%",
+  padding:"12px",
+  background:"#2f6fbd",
+  color:"#fff",
+  border:"none",
+  borderRadius:"6px",
+  cursor:"pointer"
+},
+
+/* RIGHT QR AREA */
+
+qrWrapper:{
+  flex:"1",
+  position:"relative",
+  borderRadius:"12px",
+  overflow:"hidden",
+  display:"flex",
+  flexDirection:"column",
+  alignItems:"center",
+  justifyContent:"center"
+},
+
+qrBackground:{
+  position:"absolute",
+  width:"100%",
+  height:"100%",
+  objectFit:"cover",
+  top:"0",
+  left:"0"
+},
+
+qrCode:{
+  width:"250px",
+  position:"relative",
+  zIndex:"2",
+  marginBottom:"20px"
+},
+
+qrTitle:{
+  fontFamily: "Inter, sans-serif",
+  position:"relative",
+  zIndex:"2",
+  color:"#F6F6F6",
+  fontWeight:"600",
+  marginBottom:"5px"
+},
+
+qrText:{
+  fontFamily: "Inter, sans-serif",
+  position:"relative",
+  zIndex:"2",
+  color:"#F6F6F6",
+  fontWeight: "400",
+  fontSize:"12px"
+},
+
+
+
+
+
+
+
+// /* ---------- FOOTER SECTION ---------- */
+
+// footerSection:{
+//   background:"#232428",
+//   color:"#ccc",
+//   padding:"100px 20px 40px"
+// },
+
+// footerContainer:{
+//   width:"85%",
+//   margin:"0 auto"
+// },
+
+// /* NEWSLETTER */
+
+// newsletterTitle:{
+//   textAlign:"center",
+//   fontFamily:"Inter, sans-serif",
+//   fontSize:"40px",
+//   fontWeight:"600",
+//   color:"#e6e6e6",
+//   marginBottom:"35px"
+// },
+
+// subscribeBox:{
+//   display:"flex",
+//   justifyContent:"center",
+//   alignItems:"center",
+//   gap:"20px",
+//   marginBottom:"50px"
+// },
+
+// subscribeInput:{
+//   width:"280px",
+//   padding:"14px 18px",
+//   borderRadius:"30px",
+//   border:"none",
+//   outline:"none",
+//   fontSize:"14px"
+// },
+
+// subscribeBtn:{
+//   padding:"14px 30px",
+//   background:"#2f6fbd",
+//   color:"#fff",
+//   border:"none",
+//   borderRadius:"30px",
+//   fontSize:"14px",
+//   cursor:"pointer"
+// },
+
+// footerDivider:{
+//   height:"1px",
+//   width:"100%",
+//   background:"#3a3d44",
+//   margin:"60px 0"
+// },
+
+// /* GRID */
+
+// footerGrid:{
+//   display:"grid",
+//   gridTemplateColumns:"2fr 1fr 1fr 1fr",
+//   gap:"50px"
+// },
+
+// /* LEFT SIDE */
+
+// footerLogo:{
+//   width:"120px",
+//   marginBottom:"15px"
+// },
+
+// footerText:{
+//   fontSize:"14px",
+//   color:"#aaa",
+//   lineHeight:"1.6",
+//   marginBottom:"20px"
+// },
+
+// socialIcons:{
+//   display:"flex",
+//   gap:"12px",
+//   marginBottom:"20px"
+// },
+
+// iconCircle:{
+//   width:"36px",
+//   height:"36px",
+//   borderRadius:"50%",
+//   background:"#2c2f36",
+//   display:"flex",
+//   alignItems:"center",
+//   justifyContent:"center",
+//   cursor:"pointer"
+// },
+
+// icon:{
+//   width:"16px",
+//   height:"16px"
+// },
+
+// /* LANGUAGE */
+
+// languageBox:{
+//   display:"flex",
+//   alignItems:"center",
+//   gap:"8px"
+// },
+
+// languageIcon:{
+//   width:"18px",
+//   height:"18px"
+// },
+
+// languageText:{
+//   fontSize:"13px",
+//   color:"#bbb",
+//   fontFamily:"Inter, sans-serif"
+// },
+
+// /* HEADINGS */
+
+// footerHeading:{
+//   fontSize:"15px",
+//   fontWeight:"600",
+//   color:"#fff",
+//   marginBottom:"14px"
+// },
+
+// footerLink:{
+//   fontSize:"14px",
+//   color:"#aaa",
+//   marginBottom:"8px",
+//   cursor:"pointer"
+// },
+
+// /* BOTTOM */
+
+// footerBottom:{
+//   marginTop:"60px",
+//   paddingTop:"20px",
+//   borderTop:"1px solid #3a3d44",
+//   display:"flex",
+//   justifyContent:"space-between",
+//   flexWrap:"wrap",
+//   fontSize:"13px",
+//   color:"#888"
+// },
+
+// bottomLinks:{
+//   display:"flex",
+//   gap:"18px",
+//   flexWrap:"wrap"
+// },
+
+
+
+/* FOOTER */
+
+footerSection:{
+  background:"#1f2228",
+  padding:"110px 20px 40px",
+  color:"#ccc"
+},
+
+footerContainer:{
+  width:"85%",
+  margin:"0 auto"
+},
+
+/* NEWSLETTER */
+
+newsletterTitle:{
+  textAlign:"center",
+  fontSize:"40px",
+  fontWeight:"600",
+  color:"#e5e5e5",
+  marginBottom:"40px",
+  fontFamily:"Inter, sans-serif"
+},
+
+subscribeBox:{
+  fontFamily:"Inter, sans-serif",
+  display:"flex",
+  justifyContent:"center",
+  alignItems:"center",
+  gap:"18px",
+  marginBottom:"60px"
+},
+
+subscribeInput:{
+  fontFamily:"Inter, sans-serif",
+  width:"300px",
+  padding:"15px 22px",
+  borderRadius:"50px",
+  border:"1px solid #232428",
+  outline:"none",
+  fontSize:"14px",
+  background:"#232428"
+},
+
+subscribeBtn:{
+  fontFamily:"Inter, sans-serif",
+  display:"flex",
+  alignItems:"center",
+  gap:"8px",
+  padding:"14px 28px",
+  borderRadius:"50px",
+  border:"none",
+  background:"#2f6fbd",
+  color:"#fff",
+  fontSize:"14px",
+  cursor:"pointer"
+},
+
+subscribeArrow:{
+  width:"16px",
+  height:"16px"
+},
+
+footerDivider:{
+  height:"1px",
+  background:"#3a3d44",
+  margin:"70px 0"
+},
+
+/* GRID */
+
+footerGrid:{
+  display:"grid",
+  gridTemplateColumns:"2fr 1fr 1fr 1fr",
+  gap:"50px"
+},
+
+footerLogo:{
+  width:"120px",
+  marginBottom:"18px"
+},
+
+footerText:{
+  fontFamily:"Inter, sans-serif",
+  fontSize:"14px",
+  color:"#aaa",
+  lineHeight:"1.6",
+  marginBottom:"20px"
+},
+
+socialIcons:{
+  display:"flex",
+  gap:"12px",
+  marginBottom:"20px"
+},
+
+iconCircle:{
+  width:"38px",
+  height:"38px",
+  // borderRadius:"50%",
+  // background:"#2c2f36",
+  display:"flex",
+  alignItems:"center",
+  justifyContent:"center"
+},
+
+icon:{
+  width:"25px",
+  height:"25px"
+},
+
+/* LANGUAGE */
+
+languageBox:{
+  display:"flex",
+  alignItems:"center",
+  gap:"8px"
+},
+
+languageIcon:{
+  width:"18px",
+  height:"18px"
+},
+
+languageText:{
+  fontFamily:"Inter, sans-serif",
+  fontSize:"13px",
+  color:"#bbb"
+},
+
+/* LINKS */
+
+footerHeading:{
+  fontFamily:"Inter, sans-serif",
+  color:"#fff",
+  fontSize:"15px",
+  marginBottom:"14px",
+  fontWeight:"600"
+},
+
+footerLink:{
+  fontFamily:"Inter, sans-serif",
+  fontSize:"14px",
+  color:"#aaa",
+  marginBottom:"8px",
+  cursor:"pointer"
+},
+
+/* BOTTOM */
+
+footerBottom:{
+  fontFamily:"Inter, sans-serif",
+  marginTop:"70px",
+  paddingTop:"20px",
+  borderTop:"1px solid #3a3d44",
+  display:"flex",
+  justifyContent:"space-between",
+  flexWrap:"wrap",
+  fontSize:"13px",
+  color:"#888"
+},
+
+footerBottomcolor:{
+  fontFamily:"Inter, sans-serif",
+},
+
+bottomLinks:{
+  fontFamily:"Inter, sans-serif",
+  display:"flex",
+  gap:"18px",
+  flexWrap:"wrap"
+},
+
+bottomLinksfont:{
+  fontFamily:"Inter, sans-serif",
+},
+
 };
 
 export default $style;
