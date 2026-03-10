@@ -8,11 +8,13 @@ export default function ExpansionGrid() {
       <div style={$style.expansionContainer} className="expansion-container">
 
         {/* Heading */}
-        <h2 style={$style.DisplayTextcolor} className="expansion-title">
+        {/* <h2 style={$style.DisplayTextcolor} className="expansion-title"> */}
+        <h2 style={$style.DisplayTextcolor} className="reveal expansion-title">
           The Regional-to-National <br/> Expansion Grid
         </h2>
 
-        <p style={$style.expansionSubtitle} className="expansion-subtitle">
+        {/* <p style={$style.expansionSubtitle} className="expansion-subtitle"> */}
+        <p style={$style.expansionSubtitle} className="reveal expansion-subtitle">
           A distribution architecture designed for India’s real communication
           landscape. Influence activated across language clusters, media
           corridors, industry geographies and audience communities. Powered by
@@ -20,7 +22,8 @@ export default function ExpansionGrid() {
         </p>
 
         {/* Image */}
-        <div style={$style.expansionImageWrapper} className="expansion-image-wrapper">
+        {/* <div style={$style.expansionImageWrapper} className="expansion-image-wrapper"> */}
+        <div style={$style.expansionImageWrapper} className="reveal expansion-image-wrapper">
           <img
             src={meetingImg}
             alt="Expansion Grid"

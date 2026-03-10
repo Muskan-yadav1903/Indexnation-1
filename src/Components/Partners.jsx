@@ -58,9 +58,12 @@ export default function Partners() {
       <section style={$style.partnersSection}>
         <div style={$style.partnersContainer}>
 
-          <h2 style={$style.partnersHeading}>
+          {/* <h2 style={$style.partnersHeading}>
             Media <span style={$style.partnerBlue}>Partners</span>
-          </h2>
+          </h2> */}
+          <h2 style={$style.partnersHeading} className="reveal partners-title">
+  Media <span style={$style.partnerBlue} className="shine-text">Partners</span>
+</h2>
 
           <PartnerRow direction="right" />
           <PartnerRow direction="left" />

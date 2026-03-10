@@ -60,11 +60,15 @@ export default function Clients() {
       <section style={$style.clientsSection}>
         <div style={$style.clientsContainer}>
 
-          <h2 style={$style.clientsHeading}>
+          {/* <h2 style={$style.clientsHeading}>
             We work with <span style={$style.blueText}>companies</span> shaping 
             India’s growth story and global ambition.
-          </h2>
+          </h2> */}
 
+          <h2 style={$style.clientsHeading} className="reveal">
+  We work with <span className="shine-text">companies</span> shaping 
+  India’s growth story and global ambition.
+</h2>
           {/* Row 1 */}
           <LogoRow direction="right" />
 

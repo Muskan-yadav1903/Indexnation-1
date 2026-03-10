@@ -7,16 +7,24 @@ export default function InfluenceIndex() {
       {/* Top Content */}
       <div style={$style.influenceHeader} className="influence-header">
         <div>
-          <p style={$style.h4Regularcolor}>Our Strategic Edge</p>
-          <h2 style={$style.DisplayTextcolor}>The Influence Index</h2>
+          {/* <p style={$style.h4Regularcolor}>Our Strategic Edge</p> */}\
+          <p style={$style.h4Regularcolor} className="reveal influence-subtitle">
+  Our Strategic Edge
+</p>
+          {/* <h2 style={$style.DisplayTextcolor}>The Influence Index</h2> */}\
+          <h2 style={$style.DisplayTextcolor} className="reveal influence-title">
+  The Influence Index
+</h2>
         </div>
 
         <div style={$style.influenceTextBox} className="influence-text-box">
-          <p style={$style.h4Regularcolor}>
+          {/* <p style={$style.h4Regularcolor}> */}
+          <p style={$style.h4Regularcolor} className="reveal influence-text">
             A proprietary measurement model that evaluates real influence and tracks its movement over time across:
           </p>
 
-          <p style={$style.influenceHighlight}>
+          {/* <p style={$style.influenceHighlight}> */}
+          <p style={$style.influenceHighlight} className="reveal influence-highlight">
             Measured influence is manageable influence.
           </p>
         </div>
@@ -26,7 +34,8 @@ export default function InfluenceIndex() {
       <div style={$style.influenceCardBox} className="influence-card-box">
 
         {/* Row 1 */}
-        <div style={$style.influenceCard} className="influence-card">
+        {/* <div style={$style.influenceCard} className="influence-card"> */}
+        <div style={$style.influenceCard} className="influence-card reveal influence-card-animate">
           <div style={$style.icon2}></div>
           <h3>Analyst perception</h3>
           <p style={$style.h4Lightcolor}>
@@ -35,7 +44,8 @@ export default function InfluenceIndex() {
           </p>
         </div>
 
-        <div style={$style.influenceCard} className="influence-card">
+        {/* <div style={$style.influenceCard} className="influence-card"> */}
+        <div style={$style.influenceCard} className="influence-card reveal influence-card-animate">
           <div style={$style.icon2}></div>
           <h3>Shareholder confidence</h3>
           <p style={$style.h4Lightcolor}>
@@ -44,7 +54,8 @@ export default function InfluenceIndex() {
           </p>
         </div>
 
-        <div style={$style.influenceCard} className="influence-card">
+        {/* <div style={$style.influenceCard} className="influence-card"> */}
+        <div style={$style.influenceCard} className="influence-card reveal influence-card-animate">
           <div style={$style.icon2}></div>
           <h3>Media sentiment</h3>
           <p style={$style.h4Lightcolor}>
@@ -55,7 +66,8 @@ export default function InfluenceIndex() {
 
         {/* Row 2 */}
 
-        <div style={$style.influenceCard} className="influence-card">
+        {/* <div style={$style.influenceCard} className="influence-card"> */}
+        <div style={$style.influenceCard} className="influence-card reveal influence-card-animate">
           <div style={$style.icon2}></div>
           <h3>Reputation risk defence</h3>
           <p style={$style.h4Lightcolor}>
@@ -64,7 +76,8 @@ export default function InfluenceIndex() {
           </p>
         </div>
 
-        <div style={$style.influenceCard} className="influence-card">
+        {/* <div style={$style.influenceCard} className="influence-card"> */}
+        <div style={$style.influenceCard} className="influence-card reveal influence-card-animate">
           <div style={$style.icon2}></div>
           <h3>Leadership authority</h3>
           <p style={$style.h4Lightcolor}>
@@ -73,7 +86,8 @@ export default function InfluenceIndex() {
           </p>
         </div>
 
-        <div style={$style.influenceCard} className="influence-card">
+        {/* <div style={$style.influenceCard} className="influence-card"> */}
+        <div style={$style.influenceCard} className="influence-card reveal influence-card-animate">
           <div style={$style.icon2}></div>
           <h3>Public trust signals</h3>
           <p style={$style.h4Lightcolor}>

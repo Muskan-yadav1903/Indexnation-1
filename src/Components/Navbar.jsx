@@ -29,7 +29,7 @@ export default function Navbar() {
           style={{
             position: "fixed",
             top: 0,
-            left: "50%",
+            left: 0,
             right: 0,
             bottom: 0,
             background: "rgba(0, 0, 0, 0.4)",
@@ -41,7 +41,16 @@ export default function Navbar() {
 
       {/* Logo */}
       <div>
-        <img src={logo} alt="logo" style={$style.logo} />
+        {/* <img src={logo} alt="logo" style={$style.logo} /> */}
+        <Link
+  to="/"
+  onClick={() => {
+    closeMenu();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }}
+>
+  <img src={logo} alt="logo" style={$style.logo} />
+</Link>
       </div>
 
       {/* Mobile Hamburger */}
@@ -67,16 +76,42 @@ export default function Navbar() {
             <span style={{ fontSize: "28px", color: "#ffffff" }}>✕</span>
           </li>
         )}
-
+{/* 
         <li style={$style.h4Regular}>Home</li>
         <li style={$style.h4Regular}>About us</li>
         <li style={$style.h4Regular}>Our Services ▾</li>
         <li style={$style.h4Regular}>Strategy & Planning</li>
         <li style={$style.h4Regular}>Our Publications</li>
-        <li style={$style.h4Regular}>Blogs</li>
+        <li style={$style.h4Regular}>Blogs</li> */}
+
 
         <li style={$style.h4Regular}>
-          <button style={$style.primaryButton} onClick={closeMenu}>
+  <Link to="/" className="nav-link" onClick={closeMenu}>Home</Link>
+</li>
+
+<li style={$style.h4Regular}>
+  <Link to="/about" className="nav-link" onClick={closeMenu}>About us</Link>
+</li>
+
+<li style={$style.h4Regular}>
+  <Link to="/services" className="nav-link" onClick={closeMenu}>Our Services ▾</Link>
+</li>
+
+<li style={$style.h4Regular}>
+  <Link to="/strategy" className="nav-link" onClick={closeMenu}>Strategy & Planning</Link>
+</li>
+
+<li style={$style.h4Regular}>
+  <Link to="/publications" className="nav-link" onClick={closeMenu}>Our Publications</Link>
+</li>
+
+<li style={$style.h4Regular}>
+  <Link to="/blogs" className="nav-link" onClick={closeMenu}>Blogs</Link>
+</li>
+
+        <li style={$style.h4Regular}>
+          {/* <button style={$style.primaryButton} onClick={closeMenu}> */}
+          <button style={$style.primaryButton} className="contact-btn" onClick={closeMenu}>
             Contact Us
           </button>
         </li>

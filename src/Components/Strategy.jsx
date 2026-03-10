@@ -13,13 +13,18 @@ export default function Strategy() {
 
         <div style={styles.strategyTopRow}>
           <div>
-            <p style={styles.h4Regularcolor}>How We Work</p>
-            <h2 style={styles.DisplayTextcolor}>
+            {/* <p style={styles.h4Regularcolor}>How We Work</p> */}
+            <p style={styles.h4Regularcolor} className="reveal strategy-subtitle">
+  How We Work
+</p>
+            {/* <h2 style={styles.DisplayTextcolor}> */}
+            <h2 style={styles.DisplayTextcolor} className="reveal strategy-title">
               Where Strategy <br /> Meets Action
             </h2>
           </div>
 
-          <p style={styles.strategyTopDescription}>
+          {/* <p style={styles.strategyTopDescription}> */}
+          <p style={styles.strategyTopDescription} className="reveal strategy-text">
             Our <span style={styles.blueText}>Reputation Index Framework</span> aligns
             communications to measurable enterprise value. It brings coherence to
             voice, discipline to timing and integrity to message.
@@ -28,7 +33,8 @@ export default function Strategy() {
 
         <div className="strategy-grid" style={styles.strategyGrid}>
 
-          <div style={styles.strategyCard}>
+          {/* <div style={styles.strategyCard}> */}
+          <div className="reveal strategy-card" style={styles.strategyCard}>
             <img src={outcomeImg} alt="" style={styles.strategyCardImage} />
             <div>
               <h3 style={styles.strategyCardTitle}>The Outcome</h3>
@@ -53,7 +59,8 @@ export default function Strategy() {
             </div>
           </div>
 
-          <div style={styles.strategyCard}>
+          {/* <div style={styles.strategyCard}> */}
+          <div className="reveal strategy-card" style={styles.strategyCard}>
             <img src={whyImg} alt="" style={styles.strategyCardImage} />
             <div>
               <h3 style={styles.strategyCardTitle}>Why IndexNation</h3>
@@ -78,7 +85,8 @@ export default function Strategy() {
             </div>
           </div>
 
-          <div style={styles.strategyCard}>
+          {/* <div style={styles.strategyCard}> */}
+          <div className="reveal strategy-card" style={styles.strategyCard}>
             <img src={commitmentImg} alt="" style={styles.strategyCardImage} />
             <div>
               <h3 style={styles.strategyCardTitle}>The IndexNation Commitment</h3>
@@ -103,7 +111,8 @@ export default function Strategy() {
             </div>
           </div>
 
-          <div style={styles.strategyCard}>
+          {/* <div style={styles.strategyCard}> */}
+          <div className="reveal strategy-card" style={styles.strategyCard}>
             <img src={buildImg} alt="" style={styles.strategyCardImage} />
             <div>
               <h3 style={styles.strategyCardTitle}>Let’s Build Something Enduring</h3>

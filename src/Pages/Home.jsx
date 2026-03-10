@@ -12,11 +12,38 @@ import ResolvedCases from "../Components/ResolvedCases";
 import Partners from "../Components/Partners";
 import Contact from "../Components/Contact";
 import Footer from "../Components/Footer";
+import { useEffect } from "react";
 
 import $style from "../styles/style";
 import "../styles/responsive.css";
+import "../styles/animations.css";
 
 export default function Home() {
+
+useEffect(() => {
+
+  const reveals = document.querySelectorAll(".reveal");
+
+  const revealOnScroll = () => {
+    reveals.forEach((el) => {
+      const windowHeight = window.innerHeight;
+      const elementTop = el.getBoundingClientRect().top;
+
+      if (elementTop < windowHeight - 100) {
+        el.classList.add("active");
+      }
+    });
+  };
+
+  window.addEventListener("scroll", revealOnScroll);
+
+  revealOnScroll();
+
+}, []);
+
+
+
+
   return (
     <div style={$style.h4Regular}>
       <Navbar />
@@ -50,17 +77,33 @@ export default function Home() {
         </p>
 
         <div style={$style.h4Regular}>
-          <p style={$style.readMore}>Read More ↓</p>
+          {/* <p style={$style.readMore}>Read More ↓</p> */}
+          {/* <p style={$style.readMore} className="read-more">Read More ↓</p> */}
+          <p
+  style={$style.readMore}
+  className="read-more"
+  onClick={() =>
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: "smooth"
+    })
+  }
+>
+  Read More ↓
+</p>
         </div>
 
         <div style={$style.h4Regular}>
-          <button style={$style.primaryButton}>Get an Appointment</button>
+          {/* <button style={$style.primaryButton}>Get an Appointment</button> */}
+          <button style={$style.primaryButton} className="appointment-btn">
+  Get an Appointment
+</button>
         </div>
       </div>
 
       </div> {/* end hero-wrapper */}
 
-      <TrustSection />
+      {/* <TrustSection />
       <Clients />
       <Provide />
       <Sector />
@@ -71,7 +114,21 @@ export default function Home() {
       <ResolvedCases />
       <Partners />
       <Contact />
-      <Footer />
+      <Footer /> */}
+
+      <div className="reveal"><TrustSection /></div>
+<div className="reveal"><Clients /></div>
+<div className="reveal"><Provide /></div>
+<div className="reveal"><Sector /></div>
+<div className="reveal"><Strategy /></div>
+<div className="reveal"><InfluenceIndex /></div>
+<div className="reveal"><ExpansionGrid /></div>
+<div className="reveal"><Performance /></div>
+<div className="reveal"><ResolvedCases /></div>
+<div className="reveal"><Partners /></div>
+<div className="reveal"><Contact /></div>
+<div className="reveal"><Footer /></div>
+
     </div>
   );
 }
