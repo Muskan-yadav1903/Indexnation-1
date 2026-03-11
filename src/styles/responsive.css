@@ -29,12 +29,26 @@
 /* ================= SMALL MOBILE (320px - 480px) ================= */
 
 @media (max-width: 480px) {
+  html,
+  body,
+  #root {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: left !important;
+  }
+
   /* NAVBAR */
   .navbar {
     padding: 12px 16px !important;
     width: calc(100% - 32px) !important;
+    left: 16px !important;
+    right: 16px !important;
     z-index: 1101 !important;
-    position: relative !important;
+    position: fixed !important;
+    top: 16px !important;
+    margin-top: 0 !important;
   }
 
   .logo img {
@@ -527,11 +541,6 @@
     
   }
 
-  /* hide other sections on mobile so sector appears directly after trust */
-  .clients-section,
-  .what-section {
-    display: none !important;
-  }
 
   .sectors-section {
     margin-top: 20px !important;
@@ -734,40 +743,64 @@
     align-items:center !important;
     text-align:center;
     gap:40px;
-    height: 930px;
   }
 
   .performance-left{
     max-width:650px !important;
   }
 
+  .performance-title{
+    font-size: 32px !important;
+    line-height: 1.25 !important;
+  }
+
+  .performance-text{
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+
+  .performance-btn{
+    padding: 12px 18px !important;
+    font-size: 13px !important;
+  }
+
   .performance-card{
     width:100% !important;
     max-width:520px;
-    height:380px !important;
+    height:auto !important;
     position:relative;
-    margin-bottom: 30%;
+    margin-bottom: 0 !important;
+    overflow: visible !important;
+    padding: 24px 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 22px !important;
   }
 
   .performance-img{
-    max-width:152px !important;
+    width: 220px !important;
+    max-width: 220px !important;
   }
 
   /* image positions for tablet */
 
   .imageBoxLeft{
-    position:absolute !important;
-    /* right: 10px; */
-    left:30px !important;
-    bottom:4px !important;
-    top: 14px;
-    /* padding-bottom: 50%; */
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    transform: none !important;
   }
 
   .imageBoxRight{
-    position:absolute !important;
-    right:30px !important;
-    top:20px !important;
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    transform: none !important;
   }
 
 }
@@ -805,6 +838,9 @@
 /* MOBILE PERFORMANCE SECTION */
 
 @media (max-width:480px){
+  .performance-section{
+    padding: 56px 12px !important;
+  }
 
   .performance-container{
     flex-direction:column !important;
@@ -815,6 +851,23 @@
 
   .performance-left{
     max-width:100% !important;
+  }
+
+  .performance-title{
+    font-size: 26px !important;
+    line-height: 1.25 !important;
+  }
+
+  .performance-text{
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+  }
+
+  .performance-btn{
+    width: 100% !important;
+    max-width: 240px;
+    padding: 11px 16px !important;
+    font-size: 13px !important;
   }
 
   .performance-card{
@@ -1147,10 +1200,6 @@ body.menu-open {
   }
 
   /* hide non‑trust sections so sector appears immediately */
-  .clients-section,
-  .what-section {
-    display: none !important;
-  }
 
   .sectors-section {
     margin-top: 20px !important;

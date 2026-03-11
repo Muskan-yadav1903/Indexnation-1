@@ -45,7 +45,7 @@ useEffect(() => {
 
 
   return (
-    <div style={$style.h4Regular}>
+    <div className="home-page" style={$style.h4Regular}>
       <Navbar />
 
       {/* Hero section wrapper (relative positioning) */}
