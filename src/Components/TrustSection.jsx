@@ -4,7 +4,7 @@ import handshake from "../assets/handshake.png";
 
 export default function TrustSection() {
   return (
-    <section style={$style.trustSection}>
+    <section className="trust-section" style={$style.trustSection}>
       <div className="trust-container" style={$style.trustContainer}>
 
         {/* LEFT SIDE */}

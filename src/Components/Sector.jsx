@@ -11,8 +11,8 @@ import manufacturing from "../assets/briefcase.svg";
 
 export default function Sectors() {
   return (
-    <section style={styles.sectorsSection}>
-      <div style={styles.container}>
+    <section className="sectors-section" style={styles.sectorsSection}>
+      <div className="sectors-container" style={styles.container}>
 
         {/* <h2 style={styles.DisplayTextcolor}>Sectors We Serve</h2> */}
         <h2 style={styles.DisplayTextcolor} className="reveal sectors-title">

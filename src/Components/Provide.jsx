@@ -34,8 +34,8 @@ export default function WhatWeDo() {
   ];
 
   return (
-    <section style={styles.whatSection}>
-      <div style={styles.whatContainer}>
+    <section className="what-section" style={styles.whatSection}>
+      <div className="what-container" style={styles.whatContainer}>
 
         {/* <h2 style={styles.DisplayTextcolor}>What we do</h2> */}
         <h2 style={styles.DisplayTextcolor} className="reveal what-title">
@@ -80,7 +80,7 @@ export default function WhatWeDo() {
 </div>
 
         {/* Cards Section */}
-        <div style={styles.bigCardSection}>
+        <div className="big-card-section" style={styles.bigCardSection}>
           <div className="card-grid" style={styles.cardGrid}>
             {services.map((service, index) => (
               <div

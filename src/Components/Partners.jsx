@@ -22,6 +22,7 @@ export default function Partners() {
   const PartnerRow = ({ direction }) => (
     <div style={$style.partnerRowWrapper}>
       <div
+        className="partner-track"
         style={{
           ...$style.partnerTrack,
           animation:
@@ -32,7 +33,7 @@ export default function Partners() {
       >
         {[...logos, ...logos].map((logo, index) => (
           <div key={index} style={$style.partnerLogoWrapper}>
-            <img src={logo} alt="partner" style={$style.partnerLogo} />
+            <img className="partner-logo" src={logo} alt="partner" style={$style.partnerLogo} />
           </div>
         ))}
       </div>
@@ -55,7 +56,7 @@ export default function Partners() {
         `}
       </style>
 
-      <section style={$style.partnersSection}>
+      <section className="partners-section" style={$style.partnersSection}>
         <div style={$style.partnersContainer}>
 
           {/* <h2 style={$style.partnersHeading}>

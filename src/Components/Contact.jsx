@@ -35,18 +35,18 @@ export default function Contact() {
   };
 
   return (
-    <section style={$style.contactSection}>
-      <div style={$style.contactContainer}>
+    <section className="contact-section" style={$style.contactSection}>
+      <div className="contact-container" style={$style.contactContainer}>
 
-        <h2 style={$style.DisplayTextcolor}>
+        <h2 className="contact-title" style={$style.DisplayTextcolor}>
           Ready To Work With Us?
         </h2>
 
-        <p style={$style.contactSubtitle}>
+        <p className="contact-subtitle" style={$style.contactSubtitle}>
           Let's collaborate or have a question? Contact Us
         </p>
 
-        <div style={$style.contactCard}>
+        <div className="contact-card" style={$style.contactCard}>
 
           <form ref={form} onSubmit={sendEmail} style={$style.contactFormSide}>
 
@@ -58,17 +58,17 @@ export default function Contact() {
               Let's align our constellations! Reach out and let the magic of collaboration illuminate our skies.
             </p>
 
-            <div style={$style.nameRow}>
-              <input name="last_name" placeholder="Last Name" style={$style.inputHalf} required />
-              <input name="first_name" placeholder="First Name" style={$style.inputHalf} required />
+            <div className="contact-name-row" style={$style.nameRow}>
+              <input className="contact-input-half" name="last_name" placeholder="Last Name" style={$style.inputHalf} required />
+              <input className="contact-input-half" name="first_name" placeholder="First Name" style={$style.inputHalf} required />
             </div>
 
-            <input name="email" placeholder="Email" style={$style.inputFull} required />
-            <input name="phone" placeholder="Phone Number" style={$style.inputFull} required />
+            <input className="contact-input-full" name="email" placeholder="Email" style={$style.inputFull} required />
+            <input className="contact-input-full" name="phone" placeholder="Phone Number" style={$style.inputFull} required />
 
-            <textarea name="message" placeholder="Message" rows="4" style={$style.textarea} required />
+            <textarea className="contact-textarea" name="message" placeholder="Message" rows="4" style={$style.textarea} required />
 
-            <button type="submit" style={$style.submitBtn}>
+            <button className="contact-submit-btn" type="submit" style={$style.submitBtn}>
               Submit
             </button>
 
@@ -81,12 +81,12 @@ export default function Contact() {
 
           </form>
 
-          <div style={$style.qrWrapper}>
+          <div className="contact-qr-wrapper" style={$style.qrWrapper}>
             <img src={qrBg} alt="background" style={$style.qrBackground} />
-            <img src={qrCode} alt="qr code" style={$style.qrCode} />
+            <img className="contact-qr-code" src={qrCode} alt="qr code" style={$style.qrCode} />
 
-            <h4 style={$style.qrTitle}>Connect with us</h4>
-            <p style={$style.qrText}>Scan the QR Code to chat</p>
+            <h4 className="contact-qr-title" style={$style.qrTitle}>Connect with us</h4>
+            <p className="contact-qr-text" style={$style.qrText}>Scan the QR Code to chat</p>
           </div>
 
         </div>

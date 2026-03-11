@@ -33,7 +33,7 @@ export default function Clients() {
       >
         {[...logos, ...logos].map((logo, index) => (
           <div key={index} style={$style.logoWrapper}>
-            <img src={logo} alt="client" style={$style.clientLogo} />
+            <img className="client-logo" src={logo} alt="client" style={$style.clientLogo} />
           </div>
         ))}
       </div>
@@ -57,7 +57,7 @@ export default function Clients() {
         `}
       </style>
 
-      <section style={$style.clientsSection}>
+      <section className="clients-section" style={$style.clientsSection}>
         <div style={$style.clientsContainer}>
 
           {/* <h2 style={$style.clientsHeading}>
@@ -65,7 +65,7 @@ export default function Clients() {
             India’s growth story and global ambition.
           </h2> */}
 
-          <h2 style={$style.clientsHeading} className="reveal">
+          <h2 style={$style.clientsHeading} className="reveal clients-title">
   We work with <span className="shine-text">companies</span> shaping 
   India’s growth story and global ambition.
 </h2>

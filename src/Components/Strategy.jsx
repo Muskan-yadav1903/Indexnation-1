@@ -8,10 +8,10 @@ import buildImg from "../assets/build.png";
 
 export default function Strategy() {
   return (
-    <section style={styles.strategySection}>
-      <div style={styles.strategyContainer}>
+    <section className="strategy-section" style={styles.strategySection}>
+      <div className="strategy-container" style={styles.strategyContainer}>
 
-        <div style={styles.strategyTopRow}>
+        <div className="strategyTopRow" style={styles.strategyTopRow}>
           <div>
             {/* <p style={styles.h4Regularcolor}>How We Work</p> */}
             <p style={styles.h4Regularcolor} className="reveal strategy-subtitle">
@@ -24,7 +24,7 @@ export default function Strategy() {
           </div>
 
           {/* <p style={styles.strategyTopDescription}> */}
-          <p style={styles.strategyTopDescription} className="reveal strategy-text">
+          <p style={styles.strategyTopDescription} className="reveal strategy-text strategyTopDescription">
             Our <span style={styles.blueText}>Reputation Index Framework</span> aligns
             communications to measurable enterprise value. It brings coherence to
             voice, discipline to timing and integrity to message.

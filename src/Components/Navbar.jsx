@@ -40,7 +40,7 @@ export default function Navbar() {
       )}
 
       {/* Logo */}
-      <div>
+      <div className="logo">
         {/* <img src={logo} alt="logo" style={$style.logo} /> */}
         <Link
   to="/"
