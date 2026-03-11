@@ -1,8 +1,8 @@
 import $style from "../styles/style";
 import caseImg from "../assets/case.png";
-import leftArrow from "../assets/Expand_left.svg";
-import rightArrow from "../assets/Expand_right.svg";
-import Arrow from "../assets/Expand1.svg";
+import leftArrow from "../assets/expand_left.svg";
+import rightArrow from "../assets/expand_right.svg";
+import arrow from "../assets/expand1.svg";
 
 export default function ResolvedCases() {
   return (
@@ -40,7 +40,7 @@ export default function ResolvedCases() {
 
   Learn more
   <span className="case-btn-arrow">
-    <img src={Arrow} alt="arrow" />
+    <img src={arrow} alt="arrow" />
   </span>
 
 </button>
