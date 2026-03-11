@@ -15,11 +15,13 @@ export default function Footer() {
   return (
     <footer className="footer-section" style={$style.footerSection}>
       <div className="footer-container" style={$style.footerContainer}>
-        <h2 className="newsletter-title" style={$style.newsletterTitle}>
+        {/* <h2 className="newsletter-title" style={$style.newsletterTitle}> */}
+        <h2 className="newsletter-title reveal footer-title" style={$style.newsletterTitle}>
           Subscribe to our newsletter for free!
         </h2>
 
-        <div className="subscribe-box" style={$style.subscribeBox}>
+        {/* <div className="subscribe-box" style={$style.subscribeBox}> */}
+        <div className="subscribe-box reveal footer-subscribe" style={$style.subscribeBox}>
           <input
             className="subscribe-input"
             type="email"
@@ -35,7 +37,8 @@ export default function Footer() {
 
         <div className="footer-divider" style={$style.footerDivider}></div>
 
-        <div className="footer-grid" style={$style.footerGrid}>
+        {/* <div className="footer-grid" style={$style.footerGrid}> */}
+        <div className="footer-grid reveal footer-grid-animate" style={$style.footerGrid}>
           <div className="footer-brand-col">
             <img className="footer-logo" src={logo} alt="logo" style={$style.footerLogo}/>
 

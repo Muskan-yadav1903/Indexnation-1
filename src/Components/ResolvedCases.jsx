@@ -7,15 +7,18 @@ export default function ResolvedCases() {
   return (
     <section className="resolved-cases-section" style={$style.casesSection}>
       <div className="resolved-cases-container" style={$style.casesContainer}>
-        <h2 className="resolved-cases-title" style={$style.displayText1Bold}>
+        {/* <h2 className="resolved-cases-title" style={$style.displayText1Bold}> */}
+        <h2 className="resolved-cases-title reveal resolved-title" style={$style.displayText1Bold}>
           Our Resolved Cases
         </h2>
 
-        <p className="resolved-cases-subtitle" style={$style.casesSubtitle}>
+        {/* <p className="resolved-cases-subtitle" style={$style.casesSubtitle}> */}
+        <p className="resolved-cases-subtitle reveal resolved-subtitle" style={$style.casesSubtitle}>
           Real transformation measured in market respect, reach and reputation strength.
         </p>
 
-        <div className="resolved-case-card" style={$style.caseCard}>
+        {/* <div className="resolved-case-card" style={$style.caseCard}> */}
+        <div className="resolved-case-card reveal resolved-card" style={$style.caseCard}>
           <div className="resolved-case-left" style={$style.caseLeft}>
             <p className="resolved-case-meta" style={$style.bodyLargeLightcolor}>
               Financial - January 16, 2024
@@ -39,7 +42,8 @@ export default function ResolvedCases() {
 
           <div className="resolved-case-right" style={$style.caseRight}>
             <img
-              className="resolved-case-image"
+              // className="resolved-case-image"
+                className="resolved-case-image resolved-img"
               src={caseImg}
               alt="Resolved case visual"
               style={$style.caseImage}
@@ -47,7 +51,8 @@ export default function ResolvedCases() {
           </div>
         </div>
 
-        <div className="resolved-slider-controls" style={$style.sliderControls}>
+        {/* <div className="resolved-slider-controls" style={$style.sliderControls}> */}
+        <div className="resolved-slider-controls reveal resolved-controls" style={$style.sliderControls}>
           <img
             className="resolved-slider-arrow"
             src={leftArrow}

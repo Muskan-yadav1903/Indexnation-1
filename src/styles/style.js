@@ -428,7 +428,7 @@ trustSection: {
   // background: "var(--Black, #111)",
   // backgroundColor: "#0B0B0B",
   color: "#111",
-  padding: "90px 60px",
+  padding: "170px 60px",
   width: "100%",
   // height: "auto",
 },

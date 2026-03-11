@@ -10,13 +10,15 @@ export default function Performance() {
         {/* LEFT TEXT */}
         <div style={$style.performanceLeft} className="performance-left">
 
-          <h2 style={$style.performanceTitle}>
+          {/* <h2 style={$style.performanceTitle}> */}
+          <h2 style={$style.performanceTitle} className="reveal performance-title">
             Performance speaks loudly.<br/>
             Clarity makes sure it is<br/>
             heard correctly.
           </h2>
 
-          <p style={$style.performanceText}>
+          {/* <p style={$style.performanceText}> */}
+          <p style={$style.performanceText} className="reveal performance-text">
             Performance on its own is not enough. Without clarity,
             even strong results can be misunderstood or overlooked.
             Clear, disciplined communication ensures that performance
@@ -24,27 +26,31 @@ export default function Performance() {
             and aligned with long-term value creation.
           </p>
 
-          <button style={$style.primaryButton}>
+          {/* <button style={$style.primaryButton}> */}
+          <button style={$style.primaryButton} className="performance-btn">
             Get an Appointment →
           </button>
 
         </div>
 
         {/* RIGHT IMAGE CARD */}
-        <div style={$style.performanceCard} className="performance-card">
+        {/* <div style={$style.performanceCard} className="performance-card"> */}
+        <div style={$style.performanceCard} className="reveal performance-card">
 
           {/* LEFT IMAGE */}
           {/* <div style={$style.imageBoxLeft} className="imageBoxLeft"> */}
           <div className="imageBoxLeft" style={$style.imageBoxLeft}>
             <div style={$style.blueBg}></div>
-            <img src={img1} alt="" style={$style.performanceImg} className="performance-img"/>
+            {/* <img src={img1} alt="" style={$style.performanceImg} className="performance-img"/> */}
+            <img src={img1} alt="" style={$style.performanceImg} className="performance-img float-img"/>
           </div>
 
           {/* RIGHT IMAGE */}
           {/* <div style={$style.imageBoxRight} className="imageBoxRight"> */}
           <div className="imageBoxRight" style={$style.imageBoxRight}>
             <div style={$style.greenBg}></div>
-            <img src={img2} alt="" style={$style.performanceImg} className="performance-img"/>
+            {/* <img src={img2} alt="" style={$style.performanceImg} className="performance-img"/> */}
+            <img src={img2} alt="" style={$style.performanceImg} className="performance-img float-img"/>
           </div>
 
         </div>
