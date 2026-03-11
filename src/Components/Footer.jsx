@@ -29,7 +29,7 @@ export default function Footer() {
             style={$style.subscribeInput}
           />
 
-          <button className="subscribe-btn" style={$style.subscribeBtn}>
+          <button className="subscribe-btn appointment-btn" style={$style.subscribeBtn}>
             Subscribe
             <img className="subscribe-arrow" src={arrow} alt="arrow" style={$style.subscribeArrow}/>
           </button>
@@ -96,7 +96,7 @@ export default function Footer() {
 
         <div className="footer-bottom" style={$style.footerBottom}>
           <p className="footer-bottom-text" style={$style.footerBottomcolor}>
-            Copyright 2026 IndexNation. All Rights Reserved.
+            © Copyright 2026 IndexNation. All Rights Reserved.
           </p>
 
           <div className="bottom-links" style={$style.bottomLinks}>

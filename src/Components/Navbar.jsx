@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import $style from "../styles/style";
 import logo from "../assets/logo.png";
+import servicesArrow from "../assets/services-arrow.svg";
 
 export default function Navbar() {
   const location = useLocation();
@@ -76,14 +77,6 @@ export default function Navbar() {
             <span style={{ fontSize: "28px", color: "#ffffff" }}>✕</span>
           </li>
         )}
-{/* 
-        <li style={$style.h4Regular}>Home</li>
-        <li style={$style.h4Regular}>About us</li>
-        <li style={$style.h4Regular}>Our Services ▾</li>
-        <li style={$style.h4Regular}>Strategy & Planning</li>
-        <li style={$style.h4Regular}>Our Publications</li>
-        <li style={$style.h4Regular}>Blogs</li> */}
-
 
         <li style={$style.h4Regular}>
   <Link to="/" className="nav-link" onClick={closeMenu}>Home</Link>
@@ -94,7 +87,10 @@ export default function Navbar() {
 </li>
 
 <li style={$style.h4Regular}>
-  <Link to="/services" className="nav-link" onClick={closeMenu}>Our Services ▾</Link>
+  <Link to="/services" className="nav-link services-link" onClick={closeMenu}>
+  Our Services
+  <img src={servicesArrow} alt="arrow" className="services-arrow" />
+</Link>
 </li>
 
 <li style={$style.h4Regular}>

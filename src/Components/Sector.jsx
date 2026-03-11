@@ -40,7 +40,7 @@ export default function Sectors() {
           {/* <div className="sectorCard" style={styles.card}> */}
           <div className="sectorCard reveal sector-card" style={styles.card}>
             <div style={styles.iconBox}>
-              <img src={people} alt="" style={styles.icon}/>
+              <img className="sector-icon" src={people} alt="" style={styles.icon}/>
             </div>
             <h3 style={styles.h4Boldcolor}>Consumer</h3>
             <p style={styles.h4Lightcolor}>
@@ -51,7 +51,7 @@ export default function Sectors() {
           {/* <div className="sectorCard" style={styles.card}> */}
           <div className="sectorCard reveal sector-card" style={styles.card}>
             <div style={styles.iconBox}>
-              <img src={pen} alt="" style={styles.icon}/>
+              <img className="sector-icon" src={pen} alt="" style={styles.icon}/>
             </div>
             <h3 style={styles.h4Boldcolor}>Mobility</h3>
             <p style={styles.h4Lightcolor}>
@@ -62,7 +62,7 @@ export default function Sectors() {
           {/* <div className="sectorCard" style={styles.card}> */}
           <div className="sectorCard reveal sector-card" style={styles.card}>
             <div style={styles.iconBox}>
-              <img src={headset} alt="" style={styles.icon}/>
+              <img className="sector-icon" src={headset} alt="" style={styles.icon}/>
             </div>
             <h3 style={styles.h4Boldcolor}>Energy</h3>
             <p style={styles.h4Lightcolor}>
@@ -73,7 +73,7 @@ export default function Sectors() {
           {/* <div className="sectorCard" style={styles.card}> */}
           <div className="sectorCard reveal sector-card" style={styles.card}>
             <div style={styles.iconBox}>
-              <img src={briefcase} alt="" style={styles.icon}/>
+              <img className="sector-icon" src={briefcase} alt="" style={styles.icon}/>
             </div>
             <h3 style={styles.h4Boldcolor}>Retail</h3>
             <p style={styles.h4Lightcolor}>
@@ -84,7 +84,7 @@ export default function Sectors() {
           {/* <div className="sectorCard" style={styles.card}> */}
           <div className="sectorCard reveal sector-card" style={styles.card}>
             <div style={styles.iconBox}>
-              <img src={gem} alt="" style={styles.icon}/>
+              <img className="sector-icon" src={gem} alt="" style={styles.icon}/>
             </div>
             <h3 style={styles.h4Boldcolor}>BFSI</h3>
             <p style={styles.h4Lightcolor}>
@@ -95,7 +95,7 @@ export default function Sectors() {
           {/* <div className="sectorCard" style={styles.card}> */}
           <div className="sectorCard reveal sector-card" style={styles.card}>
             <div style={styles.iconBox}>
-              <img src={lighting} alt="" style={styles.icon}/>
+              <img className="sector-icon" src={lighting} alt="" style={styles.icon}/>
             </div>
             <h3 style={styles.h4Boldcolor}>Technology</h3>
             <p style={styles.h4Lightcolor}>
@@ -106,7 +106,7 @@ export default function Sectors() {
           {/* <div className="sectorCard" style={styles.card}> */}
           <div className="sectorCard reveal sector-card" style={styles.card}>
             <div style={styles.iconBox}>
-              <img src={manufacturing} alt="" style={styles.icon}/>
+              <img className="sector-icon" src={manufacturing} alt="" style={styles.icon}/>
             </div>
             <h3 style={styles.h4Boldcolor}>Manufacturing</h3>
             <p style={styles.h4Lightcolor}>

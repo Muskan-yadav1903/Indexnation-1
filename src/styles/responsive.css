@@ -26,6 +26,11 @@
   box-sizing: border-box;
 }
 
+/* Sector icon color (force white inside blue box) */
+.sectorCard .sector-icon {
+  filter: brightness(0) invert(1);
+}
+
 /* ================= SMALL MOBILE (320px - 480px) ================= */
 
 @media (max-width: 480px) {

@@ -312,23 +312,45 @@ const $style = {
   // ----Buttons Color ------
    primaryButton: {
   fontFamily: "Inter, sans-serif",
-    backgroundColor: "#2F80ED",
-    color: "#FFFFFF",
-    margin: "10px",
-    // left: "10px",
-    padding: "14px 20px",
-    borderRadius: "40px",
-    border: "none",
-    fontSize: "14px",
-    cursor: "pointer",
+  //   backgroundColor: "#2F80ED",
+  //   color: "#FFFFFF",
+  //   margin: "10px",
+  //   // left: "10px",
+  //   padding: "14px 20px",
+  //   borderRadius: "40px",
+  //   border: "none",
+  //   fontSize: "14px",
+  //   cursor: "pointer",
+  
+  background:"#2F6FDB",
+  color:"#fff",
+  padding:"16px 32px",
+  borderRadius:"40px",
+  border:"none",
+  fontSize:"16px",
+  cursor:"pointer",
+  display:"inline-flex",
+  alignItems:"center",
+  gap:"10px"
     
   },
-   readMore: {
-    color: "#2F80ED",
-    marginBottom: "30px",
-    cursor: "pointer",
-    fontWeight: "500",
-  },
+  //  readMore: {
+  //   color: "#2F80ED",
+  //   marginBottom: "30px",
+  //   cursor: "pointer",
+  //   fontWeight: "500",
+  // },
+  
+  readMore: {
+    fontFamily:"Inter, sans-serif",
+  color: "#2F80ED",
+  marginBottom: "30px",
+  cursor: "pointer",
+  fontWeight: "500",
+  display: "inline-flex",
+  alignItems: "center",
+  gap: "6px"
+},
 
   lightcolor: {
   fontFamily: "Inter, sans-serif",
@@ -347,6 +369,7 @@ const $style = {
 // ------ navbar------
 
 navbar: {
+  fontFamily: "Inter, sans-serif",
   position: "fixed",  
   top: "20px",
   left: "20px",
@@ -370,6 +393,7 @@ logo: {
   minWidth: "50px",
 },
 navList: {
+  fontFamily: "Inter, sans-serif",
   display: "flex",
   alignItems: "center",
   gap: "20px",
@@ -418,6 +442,7 @@ navList: {
     wordWrap: "break-word",
     overflow: "hidden",
   },
+  
   
 
  
@@ -739,7 +764,7 @@ iconBox:{
 icon:{
   width:"18px",
   height:"18px",
-  filter:"invert(1)"
+  filter:"brightness(0) invert(1)"
 },
 
  h4Boldcolor: {
@@ -1181,13 +1206,25 @@ bodyLargeLightcolor: {
   },
 
 caseButton:{
-  fontFamily:"Inter, sans-serif",
-  width:"140px",
-  padding:"10px 14px",
+  // fontFamily:"Inter, sans-serif",
+  // width:"140px",
+  // padding:"10px 14px",
+  // borderRadius:"25px",
+  // border:"1px solid #666",
+  // background:"#fff",
+  // cursor:"pointer"
+    fontFamily:"Inter, sans-serif",
+  width:"150px",
+  padding:"10px 16px",
   borderRadius:"25px",
   border:"1px solid #666",
   background:"#fff",
-  cursor:"pointer"
+  cursor:"pointer",
+  display:"inline-flex",
+  alignItems:"center",
+  justifyContent:"center",
+  gap:"8px",
+  color: "#000",
 },
 
 

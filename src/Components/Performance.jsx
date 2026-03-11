@@ -1,6 +1,7 @@
 import $style from "../styles/style";
 import img1 from "../assets/performance1.png";
 import img2 from "../assets/performance2.png";
+import arrow from "../assets/Arrow_alt.svg";
 
 export default function Performance() {
   return (
@@ -26,10 +27,15 @@ export default function Performance() {
             and aligned with long-term value creation.
           </p>
 
-          {/* <button style={$style.primaryButton}> */}
-          <button style={$style.primaryButton} className="performance-btn">
-            Get an Appointment →
-          </button>
+        <button style={$style.primaryButton} className="appointment-btn">
+
+  Get an Appointment
+
+  <span className="btn-arrow">
+    <img src={arrow} alt="arrow" />
+  </span>
+
+</button>
 
         </div>
 

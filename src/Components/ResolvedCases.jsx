@@ -2,6 +2,7 @@ import $style from "../styles/style";
 import caseImg from "../assets/case.png";
 import leftArrow from "../assets/Expand_left.svg";
 import rightArrow from "../assets/Expand_right.svg";
+import Arrow from "../assets/Expand1.svg";
 
 export default function ResolvedCases() {
   return (
@@ -35,9 +36,14 @@ export default function ResolvedCases() {
               sustainable growth.
             </p>
 
-            <button className="resolved-case-button" style={$style.caseButton}>
-              Learn more -&gt;
-            </button>
+           <button className="resolved-case-button case-btn" style={$style.caseButton}>
+
+  Learn more
+  <span className="case-btn-arrow">
+    <img src={Arrow} alt="arrow" />
+  </span>
+
+</button>
           </div>
 
           <div className="resolved-case-right" style={$style.caseRight}>

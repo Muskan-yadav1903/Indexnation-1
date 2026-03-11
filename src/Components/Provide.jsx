@@ -74,7 +74,7 @@ export default function WhatWeDo() {
 
 
         <div style={styles.h4Regular} className="reveal">
-  <button style={styles.primaryButton} className="core-btn">
+  <button style={styles.primaryButton} className="appointment-btn">
     Core Practices
   </button>
 </div>
