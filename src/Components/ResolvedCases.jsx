@@ -4,6 +4,9 @@ import leftArrow from "../assets/expand_left.svg";
 import rightArrow from "../assets/expand_right.svg";
 import arrow from "../assets/expand1.svg";
 
+import "../styles/responsive.css";
+import "../styles/animations.css";
+
 export default function ResolvedCases() {
   return (
     <section className="resolved-cases-section" style={$style.casesSection}>
