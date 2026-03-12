@@ -1,7 +1,7 @@
 import $style from "../styles/style";
 import img1 from "../assets/performance1.png";
 import img2 from "../assets/performance2.png";
-import arrow from "../assets/arrow_alt.svg";
+import arrow from "../assets/arrow1.svg";
 
 export default function Performance() {
   return (
