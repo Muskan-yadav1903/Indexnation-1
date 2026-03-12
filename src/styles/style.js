@@ -208,16 +208,28 @@ const $style = {
     fontWeight: "400",
     lineHeight: "120%",
   },
-  bodyLargeLight: {
-    fontFamily: "Inter, sans-serif",
-    color: "#CACACD", 
-    margin: "12px",
-    fontSize: "18px",
-    fontStyle: "normal",
-    fontWeight: "300",
-    lineHeight: "120%",
-  },
+  // bodyLargeLight: {
+  //   fontFamily: "Inter, sans-serif",
+  //   color: "#CACACD", 
+  //   margin: "12px",
+  //   fontSize: "15px",
+  //   fontStyle: "normal",
+  //   fontWeight: "200",
+  //   lineHeight: "120%",
+  // },
 
+  bodyLargeLight: {
+  fontFamily: "Inter, sans-serif",
+  color: "#CACACD",
+  marginTop: "12px",
+  marginLeft: "0px",
+  marginRight: "0px",
+  fontSize: "15px",
+  fontStyle: "normal",
+  fontWeight: "200",
+  lineHeight: "120%",
+  marginBottom: "12px",
+},
   // --- BODY REGULAR / BUTTON ---
   bodyRegularBold: {
     fontFamily: "Inter, sans-serif",
@@ -360,6 +372,8 @@ const $style = {
     fontStyle: "normal",
     fontWeight: "400",
     lineHeight: "120%",
+    textAlign: "left",
+    maxWidth: "520px",
   //   // marginTop: "30px",
     color: "#CACACD", 
     // background: "#CACACD",
@@ -380,7 +394,7 @@ navbar: {
   justifyContent: "space-between",
   alignItems: "center",
   padding: "18px 70px",
-  background: "rgba(0, 0, 0, 0.4)",  
+  background: "rgba(0, 0, 0, 0.7)",  
   borderRadius: "50px",
   backdropFilter: "blur(6px)",        
   zIndex: 1000,
@@ -405,6 +419,19 @@ navList: {
   flexWrap: "wrap",
 },
 
+
+ h4Regularham: {
+    fontFamily: "Inter, sans-serif",
+    margin: "2px",
+    padding: "6px",
+    paddingTop: "5px",
+    marginBottom: "5px",
+    color: "#F6F6F6",
+    fontSize: "15px",
+    fontStyle: "normal",
+    fontWeight: "100",
+    lineHeight: "120%",
+  },
 
 // ------- home page ------
   heroImage: {
@@ -481,7 +508,7 @@ trustRight: {
   height: "350px",
   display: "flex",
   justifyContent: "center",
-  overflow: "hidden", 
+  // overflow: "hidden", 
 },
 
 handshake: {
@@ -501,6 +528,7 @@ trustList: {
 },
 
 trustListItem: {
+  fontFamily: "Inter, sans-serif",
   display: "flex",
   alignItems: "center",
   margin: "15px 0",
@@ -683,6 +711,8 @@ clientLogo: {
     flexDirection: "column",
     justifyContent: "space-between",
     minHeight: "280px",
+    
+    
   },
 
   cardIcon1: {
@@ -700,6 +730,7 @@ clientLogo: {
 
  
   learnBtn: {
+    fontFamily: "Inter, sans-serif",
     width: "100%",
     // padding: "16px",
     borderRadius: "12px",
@@ -723,6 +754,7 @@ clientLogo: {
 sectorsSection:{
   backgroundColor:"#fff",
   padding:"90px 120px",
+  // padding: "170px 60px",
   display:"flex",
   justifyContent:"center"
 },
@@ -819,7 +851,9 @@ moreNumber:{
 
 strategySection: {
   backgroundColor: "#fff",
-  padding: "100px 20px",
+  // padding: "100px 20px",
+  padding: "100px 60px",
+
 },
 
 strategyContainer: {
@@ -849,10 +883,11 @@ strategyMainTitle: {
 
 strategyTopDescription: {
   fontFamily: "Inter, sans-serif",
-  maxWidth: "450px",
+  maxWidth: "550px",
   fontSize: "15px",
   color: "#444",
   lineHeight: "1.6",
+  padding: "50px 30px",
 },
 
 strategyGrid: {
@@ -918,7 +953,7 @@ strategyCardTitle: {
     display: "flex",
     justifyContent: "space-between",
     marginBottom: "50px",
-    alignItems: "center",
+    alignItems: "flex-start",
     flexWrap: "wrap",
   },
 
@@ -933,22 +968,26 @@ strategyCardTitle: {
     fontWeight: "700",
     color: "#111",
   },
+influenceTextBox: {
+  marginTop: "60px",
+  maxWidth: "420px",
+},
 
-  influenceTextBox: {
-    maxWidth: "420px",
-  },
+// influenceText: {
+//   fontFamily: "Inter, sans-serif",
+//   fontSize: "16px",
+//   color: "#3C3C43",
+//   lineHeight: "26px",
+//   marginBottom: "4px",
+// },
 
-  influenceText: {
-    fontSize: "15px",
-    color: "#333",
-    marginBottom: "10px",
-  },
-
-  influenceHighlight: {
+influenceHighlight: {
   fontFamily: "Inter, sans-serif",
-    color: "#1f6feb",
-    fontWeight: "600",
-  },
+  fontSize: "16px",
+  color: "#1f6feb",
+  fontWeight: "600",
+  margin: "0",
+},
 
   influenceCardBox: {
     background: "#F6F6F6",
@@ -962,6 +1001,7 @@ strategyCardTitle: {
   },
 
   influenceCard: {
+  fontFamily: "Inter, sans-serif",
     display: "flex",
     flexDirection: "column",
     gap: "10px",
@@ -1074,6 +1114,7 @@ performanceText:{
   fontSize:"15px",
   lineHeight:"1.6",
   color:"#555",
+  marginTop: "20px",
   marginBottom:"20px"
 },
 
@@ -1182,7 +1223,6 @@ caseLeft:{
   background:"#9FB2C7",
   padding:"60px",
   textAlign:"left",
-
   display:"flex",
   flexDirection:"column",
   justifyContent:"center"
@@ -1190,7 +1230,7 @@ caseLeft:{
 bodyLargeLightcolor: {
     fontFamily: "Inter, sans-serif",
     color: "#3C3C43", 
-    margin: "12px",
+    margin: "12px 0px",
     fontSize: "18px",
     fontStyle: "normal",
     fontWeight: "300",
@@ -1203,6 +1243,7 @@ bodyLargeLightcolor: {
     fontStyle: "normal",
     fontWeight: "700",
     lineHeight: "120%",
+      margin: "0"
   },
 
 caseButton:{
@@ -1658,6 +1699,117 @@ bottomLinksfont:{
   fontFamily:"Inter, sans-serif",
 },
 
+
+
+
+
+
 };
 
 export default $style;
+
+
+
+
+
+
+// page:{
+// background:"#0b0f14",
+// padding:"80px 40px",
+// display:"flex",
+// justifyContent:"center"
+// },
+
+// card:{
+// background:"#a9c5ae",
+// borderRadius:"35px",
+// padding:"70px",
+// display:"flex",
+// alignItems:"center",
+// justifyContent:"space-between",
+// maxWidth:"1200px",
+// width:"100%"
+// },
+
+// left:{
+// width:"45%"
+// },
+
+// title:{
+// fontSize:"42px",
+// fontWeight:"700",
+// lineHeight:"1.2",
+// color:"#111",
+// marginBottom:"20px"
+// },
+
+// text:{
+// fontSize:"16px",
+// color:"#333",
+// marginBottom:"30px"
+// },
+
+// button:{
+// background:"#111",
+// color:"#fff",
+// border:"none",
+// padding:"12px 22px",
+// borderRadius:"25px",
+// cursor:"pointer",
+// fontSize:"14px"
+// },
+
+// right:{
+// position:"relative",
+// width:"45%"
+// },
+
+// image:{
+// width:"100%",
+// borderRadius:"20px"
+// },
+
+// tag:{
+// position:"absolute",
+// padding:"10px 14px",
+// borderRadius:"12px",
+// fontSize:"12px",
+// color:"#fff",
+// maxWidth:"180px"
+// },
+
+// greenTag1:{
+// background:"#3aa66a",
+// top:"-10px",
+// left:"40%"
+// },
+
+// greenTag2:{
+// background:"#3aa66a",
+// top:"35%",
+// right:"-20px"
+// },
+
+// greenTag3:{
+// background:"#3aa66a",
+// bottom:"20px",
+// left:"-10px"
+// },
+
+// blueTag1:{
+// background:"#2f6fd6",
+// top:"-20px",
+// right:"-10px"
+// },
+
+// blueTag2:{
+// background:"#2f6fd6",
+// top:"40%",
+// left:"-30px"
+// },
+
+// blueTag3:{
+// background:"#2f6fd6",
+// bottom:"-10px",
+// right:"10px"
+// },

@@ -5,6 +5,7 @@ import outcomeImg from "../assets/outcome.png";
 import whyImg from "../assets/why.png";
 import commitmentImg from "../assets/commitment.png";
 import buildImg from "../assets/build.png";
+import checkIcon from "../assets/icons.svg";
 
 export default function Strategy() {
   return (
@@ -40,19 +41,19 @@ export default function Strategy() {
               <h3 style={styles.strategyCardTitle}>The Outcome</h3>
               <ul style={styles.bodyLargeLight}>
                 <li style={styles.trustListItem}>
-                  <div style={styles.trustCheck}>✓</div>
+                  <div style={styles.trustCheck}><img src={checkIcon} alt="check" width="18" /></div>
                   A story investors understand
                 </li>
                 <li style={styles.trustListItem}>
-                  <div style={styles.trustCheck}>✓</div>
+                  <div style={styles.trustCheck}><img src={checkIcon} alt="check" width="18" /></div>
                   A reputation they rely on
                 </li>
                 <li style={styles.trustListItem}>
-                  <div style={styles.trustCheck}>✓</div>
+                  <div style={styles.trustCheck}><img src={checkIcon} alt="check" width="18" /></div>
                   A leadership presence they respect
                 </li>
                 <li style={styles.trustListItem}>
-                  <div style={styles.trustCheck}>✓</div>
+                  <div style={styles.trustCheck}><img src={checkIcon} alt="check" width="18" /></div>
                   A valuation supported by belief, not noise
                 </li>
               </ul>
@@ -66,19 +67,19 @@ export default function Strategy() {
               <h3 style={styles.strategyCardTitle}>Why IndexNation</h3>
               <ul style={styles.bodyLargeLight}>
                 <li style={styles.trustListItem}>
-                  <div style={styles.trustCheck}>✓</div>
+                  <div style={styles.trustCheck}><img src={checkIcon} alt="check" width="18" /></div>
                   Markets reward clarity
                 </li>
                 <li style={styles.trustListItem}>
-                  <div style={styles.trustCheck}>✓</div>
+                  <div style={styles.trustCheck}><img src={checkIcon} alt="check" width="18" /></div>
                   Investors reward consistency
                 </li>
                 <li style={styles.trustListItem}>
-                  <div style={styles.trustCheck}>✓</div>
+                  <div style={styles.trustCheck}><img src={checkIcon} alt="check" width="18" /></div>
                   History rewards those who are understood
                 </li>
                 <li style={styles.trustListItem}>
-                  <div style={styles.trustCheck}>✓</div>
+                  <div style={styles.trustCheck}><img src={checkIcon} alt="check" width="18" /></div>
                   We are the steady hand behind visible leadership
                 </li>
               </ul>
@@ -92,19 +93,19 @@ export default function Strategy() {
               <h3 style={styles.strategyCardTitle}>The IndexNation Commitment</h3>
               <ul style={styles.bodyLargeLight}>
                 <li style={styles.trustListItem}>
-                  <div style={styles.trustCheck}>✓</div>
+                  <div style={styles.trustCheck}><img src={checkIcon} alt="check" width="18" /></div>
                   Integrity in thinking
                 </li>
                 <li style={styles.trustListItem}>
-                  <div style={styles.trustCheck}>✓</div>
+                  <div style={styles.trustCheck}><img src={checkIcon} alt="check" width="18" /></div>
                   Precision in language
                 </li>
                 <li style={styles.trustListItem}>
-                  <div style={styles.trustCheck}>✓</div>
+                  <div style={styles.trustCheck}><img src={checkIcon} alt="check" width="18" /></div>
                   Strength in execution
                 </li>
                 <li style={styles.trustListItem}>
-                  <div style={styles.trustCheck}>✓</div>
+                  <div style={styles.trustCheck}><img src={checkIcon} alt="check" width="18" /></div>
                   Trust that compounds, year after year
                 </li>
               </ul>
@@ -118,19 +119,19 @@ export default function Strategy() {
               <h3 style={styles.strategyCardTitle}>Let’s Build Something Enduring</h3>
               <ul style={styles.bodyLargeLight}>
                 <li style={styles.trustListItem}>
-                  <div style={styles.trustCheck}>✓</div>
+                  <div style={styles.trustCheck}><img src={checkIcon} alt="check" width="18" /></div>
                   A story investors understand
                 </li>
                 <li style={styles.trustListItem}>
-                  <div style={styles.trustCheck}>✓</div>
+                  <div style={styles.trustCheck}><img src={checkIcon} alt="check" width="18" /></div>
                   A reputation they rely on
                 </li>
                 <li style={styles.trustListItem}>
-                  <div style={styles.trustCheck}>✓</div>
+                  <div style={styles.trustCheck}><img src={checkIcon} alt="check" width="18" /></div>
                   A leadership presence they respect
                 </li>
                 <li style={styles.trustListItem}>
-                  <div style={styles.trustCheck}>✓</div>
+                  <div style={styles.trustCheck}><img src={checkIcon} alt="check" width="18" /></div>
                   A valuation supported by belief, not noise
                 </li>
               </ul>

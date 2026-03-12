@@ -34,53 +34,58 @@ export default function WhatWeDo() {
   ];
 
   return (
-    <section className="what-section" style={styles.whatSection}>
+
+
+
+
+
+    // <section className="what-section" style={styles.whatSection}>
+    <section
+  className="what-section"
+  style={{ ...styles.whatSection, position: "relative" }}
+>
       <div className="what-container" style={styles.whatContainer}>
 
-        {/* <h2 style={styles.DisplayTextcolor}>What we do</h2> */}
         <h2 style={styles.DisplayTextcolor} className="reveal what-title">
   What we do
 </h2>
 
-        {/* <p style={styles.h4Regularcolor}>
-          We construct strategic communication systems that strengthen institutional
-           confidence, elevate corporate standing, and protect reputation across every 
-           stakeholder ecosystem.
-        </p> */}
-        <p style={styles.h4Regularcolor} className="reveal what-text">
+       
+        {/* <p style={styles.h4Regularcolor} className="reveal what-text"> */}
+        <p
+  style={{ ...styles.h4Regularcolor, textAlign: "center", maxWidth: "700px", margin: "0 auto" }}
+  className="reveal what-text"
+>
   We construct strategic communication systems that strengthen institutional
   confidence, elevate corporate standing, and protect reputation across every 
   stakeholder ecosystem.
 </p>
 
-        {/* Core Practices Button */}
-        {/* <div style={styles.h4Regular}>
-          <button
-            style={styles.primaryButton}
-            onMouseEnter={(e) => {
-              e.target.style.transform = "translateY(-3px)";
-              e.target.style.boxShadow =
-                "0 12px 30px rgba(37, 99, 235, 0.55)";
-            }}
-            onMouseLeave={(e) => {
-              e.target.style.transform = "translateY(0px)";
-              e.target.style.boxShadow =
-                "0 8px 20px rgba(37, 99, 235, 0.35)";
-            }}
-          >
-            Core Practices
-          </button>
-        </div> */}
 
+       <div
+  className="big-card-section"
+  style={{
+    ...styles.bigCardSection,
+    marginTop: "90px",
+    position: "relative"
+  }}
+>
 
-        <div style={styles.h4Regular} className="reveal">
-  <button style={styles.primaryButton} className="appointment-btn">
+  <div
+  className="core-practice-btn"
+  style={{
+    position: "absolute",
+    top: "-28px",
+    left: "50%",
+    transform: "translateX(-50%)",
+    zIndex: "20"
+  }}
+>
+  <button style={styles.primaryButton}     className="appointment-btn"
+>
     Core Practices
   </button>
 </div>
-
-        {/* Cards Section */}
-        <div className="big-card-section" style={styles.bigCardSection}>
           <div className="card-grid" style={styles.cardGrid}>
             {services.map((service, index) => (
               <div
@@ -95,7 +100,7 @@ export default function WhatWeDo() {
                   </svg>
                 </div>
 
-                <h3 style={styles.h3Bold}>{service.title}</h3>
+                <h3 style={styles.h4Bold}>{service.title}</h3>
                 <p style={styles.bodyLargeLight}>{service.text}</p>
 
                 <button style={styles.learnBtn}>Learn More</button>

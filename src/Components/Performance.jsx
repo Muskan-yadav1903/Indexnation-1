@@ -14,7 +14,7 @@ export default function Performance() {
           {/* <h2 style={$style.performanceTitle}> */}
           <h2 style={$style.performanceTitle} className="reveal performance-title">
             Performance speaks loudly.<br/>
-            Clarity makes sure it is<br/>
+            Clarity makes sure it is
             heard correctly.
           </h2>
 

@@ -48,19 +48,19 @@ export default function Footer() {
             </p>
 
             <div className="social-icons" style={$style.socialIcons}>
-              <div className="icon-circle" style={$style.iconCircle}>
+              <div style={$style.iconCircle}>
                 <img className="footer-icon" src={twitter} alt="x" style={$style.icon}/>
               </div>
 
-              <div className="icon-circle" style={$style.iconCircle}>
+              <div style={$style.iconCircle}>
                 <img className="footer-icon" src={linkedin} alt="linkedin" style={$style.icon}/>
               </div>
 
-              <div className="icon-circle" style={$style.iconCircle}>
+              <div style={$style.iconCircle}>
                 <img className="footer-icon" src={facebook} alt="facebook" style={$style.icon}/>
               </div>
 
-              <div className="icon-circle" style={$style.iconCircle}>
+              <div style={$style.iconCircle}>
                 <img className="footer-icon" src={instagram} alt="instagram" style={$style.icon}/>
               </div>
             </div>

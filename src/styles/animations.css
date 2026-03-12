@@ -22,7 +22,7 @@
   position: relative;
   cursor:pointer;
 }
-
+/* 
 .nav-list li::after{
   content:"";
   position:absolute;
@@ -32,10 +32,10 @@
   height:2px;
   background:#fff;
   transition:0.3s;
-}
+} */
 
 .nav-list li:hover::after{
-  width:100%;
+  width:80%;
 }
 
 
@@ -506,8 +506,8 @@ button:hover{
 
 .sector-card:hover{
   transform:translateY(-10px) scale(1.02);
-  border:1px solid #2563eb;
-  box-shadow:0 20px 45px rgba(37,99,235,0.25);
+  /* border:1px solid #2563eb; */
+  /* box-shadow:0 20px 45px rgba(37,99,235,0.25); */
 }
 
 /* ICON ANIMATION */
