@@ -1,7 +1,7 @@
 import $style from "../styles/style";
 import caseImg from "../assets/case.png";
-import leftArrow from "../assets/expand_left.svg";
-import rightArrow from "../assets/expand_right.svg";
+import leftArrow from "../assets/expandleft.svg";
+import rightArrow from "../assets/expandright.svg";
 import arrow from "../assets/expand1.svg";
 
 import "../styles/responsive.css";
