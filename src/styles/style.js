@@ -366,15 +366,15 @@ const $style = {
 
   lightcolor: {
   fontFamily: "Inter, sans-serif",
-    margin: "5px",
+    // margin: "5px",
     color: "#F6F6F6",
     fontSize: "15px",
     fontStyle: "normal",
     fontWeight: "400",
     lineHeight: "120%",
     textAlign: "left",
-    maxWidth: "520px",
-  //   // marginTop: "30px",
+    maxWidth: "550px",
+    // marginTop: "30px",
     color: "#CACACD", 
     // background: "#CACACD",
   },
@@ -434,6 +434,7 @@ navList: {
   },
 
 // ------- home page ------
+
   heroImage: {
     position: "relative",
     width: "100%",
@@ -512,12 +513,20 @@ trustRight: {
 },
 
 handshake: {
-  width: "100%",
-  height: "100%",
-  objectFit: "cover",
-  objectPosition: "center",
-  maxWidth: "720px",
-  borderRadius: "10%",
+
+  width: "70%",
+   height: "100%",
+    objectfit: "cover",
+     objectposition: "center center",
+      maxwidth: "720px",
+    borderradius: "10%",
+
+  // width: "100%",
+  // height: "100%",
+  // objectFit: "cover",
+  // objectPosition: "center",
+  // maxWidth: "720px",
+  // borderRadius: "10%",
 },
 
 trustList: {
@@ -1272,7 +1281,8 @@ caseButton:{
 /* IMAGE */
 
 caseRight:{
-  flex:"1"
+  flex:"1",
+  height: "520px",
 },
 
 caseImage:{

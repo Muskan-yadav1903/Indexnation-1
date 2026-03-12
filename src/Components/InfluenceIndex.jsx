@@ -7,11 +7,11 @@ export default function InfluenceIndex() {
       {/* Top Content */}
       <div style={$style.influenceHeader} className="influence-header">
         <div>
-          {/* <p style={$style.h4Regularcolor}>Our Strategic Edge</p> */}\
+          {/* <p style={$style.h4Regularcolor}>Our Strategic Edge</p> */}
           <p style={$style.h4Regularcolor} className="reveal influence-subtitle">
   Our Strategic Edge
 </p>
-          {/* <h2 style={$style.DisplayTextcolor}>The Influence Index</h2> */}\
+          {/* <h2 style={$style.DisplayTextcolor}>The Influence Index</h2> */}
           <h2 style={$style.DisplayTextcolor} className="reveal influence-title">
   The Influence <br /> Index
 </h2>

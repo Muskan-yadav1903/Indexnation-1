@@ -1,4 +1,5 @@
-import { useState } from "react";
+// import { useState } from "react";
+import { useState, useEffect } from "react";
 import $style from "../styles/style";
 import caseImg from "../assets/case.png";
 import casepic from "../assets/pic.jpg";
@@ -37,6 +38,15 @@ export default function ResolvedCases() {
   ];
 
   const [current, setCurrent] = useState(0);
+  useEffect(() => {
+
+  const interval = setInterval(() => {
+    setCurrent((prev) => (prev + 1) % cases.length);
+  }, 2000); // 1000ms = 1 second
+
+  return () => clearInterval(interval);
+
+}, [cases.length]);
 
   const nextCase = () => {
     setCurrent((prev) => (prev + 1) % cases.length);
