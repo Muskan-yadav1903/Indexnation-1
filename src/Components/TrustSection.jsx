@@ -5,7 +5,7 @@ import icon from "../assets/icons.svg";
 
 export default function TrustSection() {
   return (
-    <section className="trust-section" style={$style.trustSection}>
+    <section id="trust" className="trust-section" style={$style.trustSection}>
       <div className="trust-container" style={$style.trustContainer}>
 
         {/* LEFT SIDE */}

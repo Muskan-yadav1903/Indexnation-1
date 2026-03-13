@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate, Link } from "react-router-dom";
 import $style from "../styles/style";
 
 import logo from "../assets/logo.png";
@@ -12,7 +13,10 @@ import globe from "../assets/globe.svg";
 import arrow from "../assets/arrow.svg";
 
 export default function Footer() {
+    const navigate = useNavigate();
+
   return (
+    
     <footer className="footer-section" style={$style.footerSection}>
       <div className="footer-container" style={$style.footerContainer}>
         {/* <h2 className="newsletter-title" style={$style.newsletterTitle}> */}
@@ -73,19 +77,92 @@ export default function Footer() {
 
           <div className="footer-links-col">
             <h4 className="footer-heading" style={$style.footerHeading}>Important Links</h4>
-            <p className="footer-link" style={$style.footerLink}>Home</p>
-            <p className="footer-link" style={$style.footerLink}>Our Services</p>
-            <p className="footer-link" style={$style.footerLink}>Strategy & Planning</p>
-            <p className="footer-link" style={$style.footerLink}>Our Publications</p>
-            <p className="footer-link" style={$style.footerLink}>Blog</p>
-            <p className="footer-link" style={$style.footerLink}>Contact Us</p>
+            {/* <p className="footer-link" style={$style.footerLink}>Home</p> */}
+
+            <p
+  className="footer-link"
+  style={$style.footerLink}
+  onClick={() =>
+    document.getElementById("home").scrollIntoView({ behavior: "smooth" })
+  }
+>
+Home
+</p>
+            {/* <p className="footer-link" style={$style.footerLink}>Our Services</p> */}
+            <p
+  className="footer-link"
+  style={$style.footerLink}
+  onClick={() =>
+    document.getElementById("services").scrollIntoView({ behavior: "smooth" })
+  }
+>
+Our Services
+</p>
+            {/* <p className="footer-link" style={$style.footerLink}>Strategy & Planning</p> */}
+            <p
+  className="footer-link"
+  style={$style.footerLink}
+  onClick={() =>
+    document.getElementById("strategy").scrollIntoView({ behavior: "smooth" })
+  }
+>
+Strategy & Planning
+</p>
+            {/* <p className="footer-link" style={$style.footerLink}>Our Publications</p> */}
+            <p
+  className="footer-link"
+  style={$style.footerLink}
+  onClick={() =>
+    document.getElementById("publications").scrollIntoView({ behavior: "smooth" })
+  }
+>
+Our Publications
+</p>
+            {/* <p className="footer-link" style={$style.footerLink}>Blog</p> */}
+            <p className="footer-link" style={$style.footerLink}>
+Blog
+</p>
+            {/* <p className="footer-link" style={$style.footerLink}>Contact Us</p> */}
+
+            <p
+  className="footer-link"
+  style={$style.footerLink}
+  onClick={() =>
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" })
+  }
+>
+Contact Us
+</p>
           </div>
 
-          <div className="footer-legals-col">
+          {/* <div className="footer-legals-col">
             <h4 className="footer-heading" style={$style.footerHeading}>Legals</h4>
             <p className="footer-link" style={$style.footerLink}>Privacy Policy</p>
             <p className="footer-link" style={$style.footerLink}>Terms & Conditions</p>
-          </div>
+          </div> */}
+
+         <div className="footer-legals-col">
+  <h4 className="footer-heading" style={$style.footerHeading}>Legals</h4>
+
+  <Link 
+    to="/privacy" 
+    className="footer-link"
+    style={{ ...$style.footerLink, textDecoration: "none", color: "inherit", display: "block", marginBottom: "10px" }}
+  >
+    Privacy Policy
+  </Link>
+
+  <Link 
+    to="/terms" 
+    className="footer-link"
+    style={{ ...$style.footerLink, textDecoration: "none", color: "inherit", display: "block" }}
+  >
+    Terms & Conditions
+  </Link>
+
+</div>
+
+
 
           <div className="footer-contact-col">
             <h4 className="footer-heading" style={$style.footerHeading}>Contact Us</h4>
@@ -100,11 +177,25 @@ export default function Footer() {
           </p>
 
           <div className="bottom-links" style={$style.bottomLinks}>
-            <span className="bottom-link-item" style={$style.bottomLinksfont}>Privacy Policy</span>
-            <span className="bottom-link-item" style={$style.bottomLinksfont}>Terms of Service</span>
-            <span className="bottom-link-item" style={$style.bottomLinksfont}>Whistleblower Policy</span>
+            {/* <span className="bottom-link-item" style={$style.bottomLinksfont}>Privacy Policy</span> */}
+            <span
+  className="bottom-link-item"
+  style={$style.bottomLinksfont}
+  onClick={() => navigate("/privacy")}
+>
+  Privacy Policy
+</span>
+            {/* <span className="bottom-link-item" style={$style.bottomLinksfont}>Terms of Service</span> */}
+            <span
+  className="bottom-link-item"
+  style={$style.bottomLinksfont}
+  onClick={() => navigate("/terms")}
+>
+Terms of Service
+</span>
+            {/* <span className="bottom-link-item" style={$style.bottomLinksfont}>Whistleblower Policy</span> */}
             <span className="bottom-link-item" style={$style.bottomLinksfont}>Cookie policy</span>
-            <span className="bottom-link-item" style={$style.bottomLinksfont}>Cookie Settings</span>
+            {/* <span className="bottom-link-item" style={$style.bottomLinksfont}>Cookie Settings</span> */}
           </div>
         </div>
       </div>

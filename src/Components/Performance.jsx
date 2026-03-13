@@ -27,8 +27,22 @@ export default function Performance() {
             and aligned with long-term value creation.
           </p>
 
-        <button style={$style.primaryButton} className="appointment-btn">
+        {/* <button style={$style.primaryButton} className="appointment-btn">
 
+  Get an Appointment
+
+  <span className="btn-arrow">
+    <img src={arrow} alt="arrow" />
+  </span>
+
+</button> */}
+<button
+  style={$style.primaryButton}
+  className="appointment-btn"
+  onClick={() =>
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" })
+  }
+>
   Get an Appointment
 
   <span className="btn-arrow">

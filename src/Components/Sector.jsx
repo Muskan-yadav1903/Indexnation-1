@@ -115,10 +115,10 @@ export default function Sectors() {
           </div>
 
           {/* <div className="sectorCard" style={styles.moreCard}> */}
-          <div className="sectorCard reveal sector-card more-card" style={styles.moreCard}>
-            <div>
-              <div style={styles.moreNumber}>+4</div>
-              <div>More</div>
+          <div  style={styles.moreCard}>
+            <div >
+              <h3 style={styles.h4newBoldcolor}>+4</h3>
+              <div style={styles.h4newBoldcolor}>More</div>
             </div>
           </div>
 

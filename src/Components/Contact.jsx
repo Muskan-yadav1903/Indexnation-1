@@ -35,7 +35,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="contact-section" style={$style.contactSection}>
+    <section id="contact" className="contact-section" style={$style.contactSection}>
       <div className="contact-container" style={$style.contactContainer}>
 
         <h2 className="contact-title" style={$style.DisplayTextcolor}>

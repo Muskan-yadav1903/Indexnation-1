@@ -41,6 +41,7 @@ export default function WhatWeDo() {
 
     // <section className="what-section" style={styles.whatSection}>
     <section
+      id="provide"
   className="what-section"
   style={{ ...styles.whatSection, position: "relative" }}
 >

@@ -170,7 +170,7 @@ const $style = {
   },
   h4Regular: {
     fontFamily: "Inter, sans-serif",
-    margin: "5px",
+    // margin: "5px",
     color: "#F6F6F6",
     fontSize: "15px",
     fontStyle: "normal",
@@ -324,6 +324,8 @@ const $style = {
   // ----Buttons Color ------
    primaryButton: {
   fontFamily: "Inter, sans-serif",
+      // marginTop: "20px",
+
   //   backgroundColor: "#2F80ED",
   //   color: "#FFFFFF",
   //   margin: "10px",
@@ -514,12 +516,13 @@ trustRight: {
 
 handshake: {
 
-  width: "70%",
-   height: "100%",
-    objectfit: "cover",
-     objectposition: "center center",
-      maxwidth: "720px",
-    borderradius: "10%",
+width: "70%",
+  height: "100%",
+  // objectFit: "cover",
+  objectPosition: "center center",
+  maxWidth: "720px",
+  border: "none",
+  borderRadius: "20px"
 
   // width: "100%",
   // height: "100%",
@@ -818,6 +821,17 @@ icon:{
     marginBottom: "6px",
     textAlign: "left"
   },
+   h4newBoldcolor: {
+    fontFamily: "Inter, sans-serif",
+    fontSize: "20px",
+    color: "var(--White, #fff)",
+    fontStyle: "normal",
+    fontWeight: "700",
+    lineHeight: "1.3",
+    marginBottom: "6px",
+    textAlign: "left"
+  },
+
 
   h4Lightcolor: {
     fontFamily: "Inter, sans-serif",
@@ -850,6 +864,12 @@ moreCard:{
 },
 
 moreNumber:{
+      color: "var(--Black, #111)",
+    fontStyle: "normal",
+    fontWeight: "700",
+    lineHeight: "1.3",
+    marginBottom: "6px",
+    textAlign: "left",
   fontFamily: "Inter, sans-serif",
   fontSize:"20px",
   marginBottom:"4px",
@@ -1468,7 +1488,8 @@ textarea:{
   padding:"12px",
   borderRadius:"6px",
   border:"1px solid #ddd",
-  marginBottom:"15px"
+  marginBottom:"15px",
+  resize: "none",
 },
 
 submitBtn:{
@@ -1557,6 +1578,7 @@ newsletterTitle:{
 },
 
 subscribeBox:{
+   color:"#fff",
   fontFamily:"Inter, sans-serif",
   display:"flex",
   justifyContent:"center",
@@ -1566,6 +1588,7 @@ subscribeBox:{
 },
 
 subscribeInput:{
+   color:"#fff",
   fontFamily:"Inter, sans-serif",
   width:"300px",
   padding:"15px 22px",

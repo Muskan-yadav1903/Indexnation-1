@@ -89,6 +89,9 @@ useEffect(() => {
 
   return (
     <>
+
+    
+    
     <div className="cursor"></div>
 <div className="cursor-dot"></div>
 
@@ -96,7 +99,7 @@ useEffect(() => {
       <Navbar />
 
       {/* Hero section wrapper (relative positioning) */}
-      <div className="hero-wrapper" style={{ position: "relative" }}>
+      <div id="home" className="hero-wrapper" style={{ position: "relative" }}>
         {/* Background Image */}
         <img
           src={heroImage}
@@ -130,14 +133,16 @@ useEffect(() => {
     lineHeight: expanded ? "1.6" : "1.8"
   }}
 >
-  There is a direct line between narrative discipline and market
-  respect. When a company controls how it is understood, it controls
-  how it is valued. The greatest leaders know that communication is
-  not a cost centre. It is one of the few levers that can move
-  perception, protect reputation, and influence price without adding
-  operational risk.
+              Narrative discipline drives market respect. When a 
+              company controls its story, it influences how it is valued. 
+              Communication is not a cost centre—it is a strategic lever that 
+              shapes perception, protects reputation, and influences price 
+              without operational risk.Shareholders invest in numbers but 
+              stay for clarity. Without a clear narrative, even strong 
+              performance can be overlooked.
 
-  {expanded && (
+
+  {/* {expanded && (
     <>
       <br /><br />
       Shareholders invest in numbers, but they stay for clarity.
@@ -146,11 +151,11 @@ useEffect(() => {
       that treat communication as strategy, not afterthought, shape
       their own destiny instead of being shaped by speculation.
     </>
-  )}
+  )} */}
 </p>
 
         <div style={$style.h4Regular}>
-        <p
+        {/* <p
   style={$style.readMore}
   className="read-more"
   onClick={() => setExpanded(!expanded)}
@@ -170,11 +175,20 @@ useEffect(() => {
       />
     </svg>
   </span>
-</p>
+</p> */}
         </div>
 
         <div style={$style.h4Regular}>
-          <button style={$style.primaryButton} className="appointment-btn">
+          {/* <button style={{...$style.primaryButton, marginTop: "20px"}}  className="appointment-btn ">
+  Get an Appointment
+</button> */}
+<button
+  style={{ ...$style.primaryButton, marginTop: "20px" }}
+  className="appointment-btn"
+  onClick={() =>
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" })
+  }
+>
   Get an Appointment
 </button>
         </div>
@@ -183,7 +197,7 @@ useEffect(() => {
       </div> 
       {/* end hero-wrapper */}
 
-      <div className="reveal"><TrustSection /></div>
+      {/* <div className="reveal"><TrustSection /></div>
 <div className="reveal"><Clients /></div>
 <div className="reveal"><Provide /></div>
 <div className="reveal"><Sector /></div>
@@ -194,8 +208,36 @@ useEffect(() => {
 <div className="reveal"><ResolvedCases /></div>
 <div className="reveal"><Partners /></div>
 <div className="reveal"><Contact /></div>
-<div className="reveal"><Footer /></div>
+<div className="reveal"><Footer /></div> */}
 
+
+<div className="reveal"><TrustSection /></div>
+<div className="reveal"><Clients /></div>
+
+<div id="services" className="reveal">
+  <Provide />
+</div>
+
+<div className="reveal"><Sector /></div>
+
+<div id="strategy" className="reveal">
+  <Strategy />
+</div>
+
+<div id="publications" className="reveal">
+  <InfluenceIndex />
+</div>
+
+<div className="reveal"><ExpansionGrid /></div>
+<div className="reveal"><Performance /></div>
+<div className="reveal"><ResolvedCases /></div>
+<div className="reveal"><Partners /></div>
+
+<div id="contact" className="reveal">
+  <Contact />
+</div>
+
+<div className="reveal"><Footer /></div>
     </div>
 
     </>

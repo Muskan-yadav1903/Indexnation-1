@@ -79,37 +79,113 @@ export default function Navbar() {
         )}
 
         <li style={$style.h4Regular}>
-  <Link to="/" className="nav-link" onClick={closeMenu}>Home</Link>
+<Link
+  to="/"
+  className="nav-link"
+  onClick={() => {
+    closeMenu();
+    setTimeout(() => {
+      const section = document.getElementById("home");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
+  }}
+>
+  Home
+</Link></li>
+
+<li style={$style.h4Regular}>
+  <Link
+  to="/"
+  className="nav-link"
+  onClick={() => {
+    closeMenu();
+    setTimeout(() => {
+      const section = document.getElementById("trust");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
+  }}
+>
+  About us
+</Link>
 </li>
 
 <li style={$style.h4Regular}>
-  <Link to="/about" className="nav-link" onClick={closeMenu}>About us</Link>
-</li>
-
-<li style={$style.h4Regular}>
-  <Link to="/services" className="nav-link services-link" onClick={closeMenu}>
+  <Link
+  to="/"
+  className="nav-link services-link"
+  onClick={() => {
+    closeMenu();
+    setTimeout(() => {
+      const section = document.getElementById("provide");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
+  }}
+>
   Our Services
   <img src={servicesArrow} alt="arrow" className="services-arrow" />
 </Link>
 </li>
 
 <li style={$style.h4Regular}>
-  <Link to="/strategy" className="nav-link" onClick={closeMenu}>Strategy & Planning</Link>
-</li>
+<Link
+  to="/"
+  className="nav-link"
+  onClick={() => {
+    closeMenu();
+    setTimeout(() => {
+      const section = document.getElementById("strategy");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
+  }}
+>
+  Strategy & Planning
+</Link></li>
 
 <li style={$style.h4Regular}>
-  <Link to="/publications" className="nav-link" onClick={closeMenu}>Our Publications</Link>
-</li>
+<Link
+  to="/"
+  className="nav-link"
+  onClick={() => {
+    closeMenu();
+    setTimeout(() => {
+      const section = document.getElementById("influence");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
+  }}
+>
+  Our Publications
+</Link></li>
 
 <li style={$style.h4Regular}>
   <Link to="/blogs" className="nav-link" onClick={closeMenu}>Blogs</Link>
 </li>
 
         <li style={$style.h4Regular}>
-          {/* <button style={$style.primaryButton} onClick={closeMenu}> */}
-          <button style={$style.primaryButton} className="contact-btn" onClick={closeMenu}>
-            Contact Us
-          </button>
+        <button
+  style={$style.primaryButton}
+  className="contact-btn"
+  onClick={() => {
+    closeMenu();
+    setTimeout(() => {
+      const section = document.getElementById("contact");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
+  }}
+>
+  Contact Us
+</button>
         </li>
 
       </ul>

@@ -2,7 +2,7 @@ import $style from "../styles/style";
 
 export default function InfluenceIndex() {
   return (
-    <section style={$style.influenceSection} className="influence-section">
+    <section id="influence" style={$style.influenceSection} className="influence-section">
       
       {/* Top Content */}
       <div style={$style.influenceHeader} className="influence-header">

@@ -9,7 +9,7 @@ import checkIcon from "../assets/icons.svg";
 
 export default function Strategy() {
   return (
-    <section className="strategy-section" style={styles.strategySection}>
+    <section id="strategy" className="strategy-section" style={styles.strategySection}>
       <div className="strategy-container" style={styles.strategyContainer}>
 
         <div className="strategyTopRow" style={styles.strategyTopRow}>
