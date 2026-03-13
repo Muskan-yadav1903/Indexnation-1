@@ -26,6 +26,20 @@
   box-sizing: border-box;
 }
 
+/* Disable custom cursor on mobile/tablet */
+@media (max-width: 768px) {
+  html,
+  body,
+  #root {
+    cursor: auto !important;
+  }
+
+  .cursor,
+  .cursor-dot {
+    display: none !important;
+  }
+}
+
 /* Sector icon color (force white inside blue box) */
 .sectorCard .sector-icon {
   filter: brightness(0) invert(1);
