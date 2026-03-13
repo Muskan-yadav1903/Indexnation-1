@@ -22,23 +22,46 @@ import "../styles/animations.css";
 export default function Home() {
   const [expanded, setExpanded] = useState(false);
 // cursor 
-  useEffect(() => {
+
+useEffect(() => {
 
   const cursor = document.querySelector(".cursor");
   const dot = document.querySelector(".cursor-dot");
 
+  let scrolling;
+
   const moveCursor = (e) => {
+
     cursor.style.left = e.clientX + "px";
     cursor.style.top = e.clientY + "px";
 
     dot.style.left = e.clientX + "px";
     dot.style.top = e.clientY + "px";
+
+    // mouse move hone par 2 circles
+    cursor.style.opacity = "1";
+
+  };
+
+  const handleScroll = () => {
+
+    // scroll par outer circle hide
+    cursor.style.opacity = "0";
+
+    clearTimeout(scrolling);
+
+    scrolling = setTimeout(() => {
+      cursor.style.opacity = "1";
+    }, 150);
+
   };
 
   window.addEventListener("mousemove", moveCursor);
+  window.addEventListener("scroll", handleScroll);
 
   return () => {
     window.removeEventListener("mousemove", moveCursor);
+    window.removeEventListener("scroll", handleScroll);
   };
 
 }, []);

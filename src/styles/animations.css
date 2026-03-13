@@ -1,5 +1,4 @@
 /* CUSTOM CURSOR */
-
 .cursor {
   position: fixed;
   width: 40px;
@@ -8,7 +7,7 @@
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: transform 0.1s ease;
+  transition: transform 0.1s ease, opacity .2s ease;
   z-index: 9999;
 }
 
@@ -22,10 +21,9 @@
   transform: translate(-50%, -50%);
   z-index: 9999;
 }
-
-
-
-
+a, button, .nav-list li{
+  cursor: none !important;
+}
 
 
 
