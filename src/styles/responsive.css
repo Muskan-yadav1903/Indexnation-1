@@ -238,16 +238,18 @@
 
   .logo-track {
     gap: 32px !important;
+    animation: none !important;
   }
 
   .logo-wrapper {
-    width: 175px !important;
-    height: 100px !important;
+    width: 190px !important;
+    height: 110px !important;
   }
 
   .client-logo {
-    height: 70px !important;
+    height: 80px !important;
     max-width: 100% !important;
+    cursor: default !important;
   }
 
   /* PROVIDE / WHAT WE DO */
@@ -400,16 +402,18 @@
 
   .partner-track {
     gap: 32px !important;
+    animation: none !important;
   }
 
   .partner-logo {
-    height: 70px !important;
+    height: 80px !important;
     max-width: 100% !important;
+    cursor: default !important;
   }
 
   .partner-logo-wrapper {
-    width: 175px !important;
-    height: 100px !important;
+    width: 190px !important;
+    height: 110px !important;
   }
 }
 
@@ -634,30 +638,34 @@
 
   .logo-track {
     gap: 24px !important;
+    animation: none !important;
   }
 
   .logo-wrapper {
-    width: 190px !important;
-    height: 110px !important;
+    width: 210px !important;
+    height: 120px !important;
   }
 
   .client-logo {
-    height: 80px !important;
+    height: 90px !important;
     max-width: 100% !important;
+    cursor: default !important;
   }
 
   .partner-track {
     gap: 24px !important;
+    animation: none !important;
   }
 
   .partner-logo {
-    height: 80px !important;
+    height: 90px !important;
     max-width: 100% !important;
+    cursor: default !important;
   }
 
   .partner-logo-wrapper {
-    width: 190px !important;
-    height: 110px !important;
+    width: 210px !important;
+    height: 120px !important;
   }
 
   /* PROVIDE/WHAT WE DO CARDS */
