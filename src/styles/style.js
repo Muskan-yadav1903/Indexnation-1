@@ -408,8 +408,10 @@ logo: {
   height: "auto",
   minWidth: "50px",
 },
+
 navList: {
   fontFamily: "Inter, sans-serif",
+  // height: "30px",
   display: "flex",
   alignItems: "center",
   gap: "20px",

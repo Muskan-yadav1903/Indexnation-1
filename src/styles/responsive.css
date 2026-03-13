@@ -114,21 +114,24 @@
 
   .nav-list {
     position: fixed !important;
-    top: 0 !important;
-    right: 0 !important;
-    width: 100% !important;
-    height: 100vh !important;
+    top: 12px !important;
+    /* right: 12px !important; */
+    /* width: 82% !important; */
+    max-width: 200px !important;
+    height: auto !important;
+    max-height: calc(660px - 24px) !important;
     margin: 0 !important;
-    padding: 56px 20px 24px !important;
+    padding: 50% 18px 18px !important;
     background: #0b0b0b !important;
     backdrop-filter: blur(10px) !important;
-    border-radius: 0 !important;
+    border-radius: 16px !important;
     list-style: none !important;
     flex-direction: column !important;
     align-items: flex-start !important;
-    gap: 14px !important;
+    justify-content: flex-start !important;
+    gap: 12px !important;
     display: none !important;
-    transform: translateX(100%) !important;
+    transform: translateX(110%) !important;
     transition: transform 0.4s ease-in-out !important;
     z-index: 1102 !important;
     overflow-y: auto !important;
@@ -141,25 +144,28 @@
 
   .close-btn {
     position: absolute !important;
-    top: 16px !important;
-    right: 16px !important;
+    top: 42px !important;
+    /* left: 93px; */
+    right: 5px !important;
     margin-bottom: 0 !important;
     width: 40px !important;
     height: 40px !important;
-    border-radius: 999px !important;
+    /* border-radius: 999px !important; */
     display: flex !important;
     align-items: center !important;
-    justify-content: center !important;
-    background: rgba(255, 255, 255, 0.08) !important;
+    /* justify-content: center !important; */
+    /* background: rgba(255, 255, 255, 0.08) !important; */
   }
 
-  .nav-list li {
-    margin: 0 !important;
+  .nav-list .close-btn + li {
+    margin-top: 150px !important;
   }
 
   .nav-list li {
     width: 100% !important;
+    height: auto !important;
     text-align: left !important;
+    
   }
 
   .nav-list li button {
@@ -499,22 +505,24 @@
 
   .nav-list {
     position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 80% !important;
-    max-width: 360px !important;
-    height: 100vh !important;
+    top: 12px !important;
+    /* left: 12px !important; */
+    width: 82% !important;
+    max-width: 300px !important;
+    height: auto !important;
+    max-height: calc(620px - 24px) !important;
     margin: 0 !important;
-    padding: 56px 20px 24px !important;
+    padding: 50% 18px 18px !important;
     background: #0b0b0b !important;
     backdrop-filter: blur(10px) !important;
-    border-radius: 0 !important;
+    border-radius: 16px !important;
     list-style: none !important;
     flex-direction: column !important;
     align-items: flex-start !important;
-    gap: 14px !important;
+    justify-content: flex-start !important;
+    gap: 12px !important;
     display: none !important;
-    transform: translateX(-100%) !important;
+    transform: translateX(-110%) !important;
     transition: transform 0.4s ease-in-out !important;
     z-index: 1102 !important;
     overflow-y: auto !important;
@@ -527,8 +535,9 @@
 
   .close-btn {
     position: absolute !important;
-    top: 16px !important;
-    right: 16px !important;
+    top: 42px !important;
+    /* left: 120px; */
+    right: 120px !important;
     margin-bottom: 0 !important;
     width: 40px !important;
     height: 40px !important;
@@ -536,12 +545,17 @@
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    background: rgba(255, 255, 255, 0.08) !important;
+    /* background: rgba(255, 255, 255, 0.08) !important; */
+  }
+
+  .nav-list .close-btn + li {
+    margin-top: 150px !important;
   }
 
   .nav-list li {
     margin: 0 !important;
   }
+  
 
   .nav-list.active {
     display: flex !important;
