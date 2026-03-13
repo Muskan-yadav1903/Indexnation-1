@@ -567,7 +567,7 @@ trustCheck: {
 // -----Clients ----------
 
 clientsSection: {
-  backgroundColor: "#111",
+  backgroundColor: "#efefef",
   padding: "90px 0",
 },
 
@@ -602,7 +602,7 @@ lineheight: "120%", /* 45.896px */
 logoRowWrapper: {
   overflow: "hidden",
   width: "100%",
-  marginBottom: "40px",
+  marginBottom: "8px",
 },
 
 logoTrack: {
@@ -612,12 +612,19 @@ logoTrack: {
 },
 
 logoWrapper: {
-  filter: "grayscale(100%)",
-  opacity: "0.6",
+  // filter: "grayscale(100%)",
+  // opacity: "0.6",
+   filter: "none",
+  opacity: "1",
+    width: "180px",
+  height: "120px",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
 },
 
 clientLogo: {
-  height: "35px",
+  height: "150px",
   objectFit: "contain",
 },
   
@@ -1352,7 +1359,7 @@ activeDot:{
 // ----- Partners ----------
 
 partnersSection: {
-  background: "#111",
+  background: "#efefef",
   padding: "90px 0",
 },
 
@@ -1389,12 +1396,19 @@ partnerTrack: {
 },
 
 partnerLogoWrapper: {
-  filter: "grayscale(100%)",
-  opacity: "0.6",
+  // filter: "grayscale(100%)",
+  // opacity: "0.6",
+  filter: "none",
+  opacity: "1",
+    width: "180px",
+  height: "120px",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
 },
 
 partnerLogo: {
-  height: "35px",
+  height: "150px",
   objectFit: "contain",
 },
 
