@@ -98,7 +98,7 @@ export default function Clients() {
         }}
       >
         {[...logos, ...logos].map((logo, index) => (
-          <div key={index} style={$style.logoWrapper}>
+          <div key={index} className="logo-wrapper" style={$style.logoWrapper}>
             <img className="client-logo" src={logo} alt="client" style={$style.clientLogo} />
           </div>
         ))}

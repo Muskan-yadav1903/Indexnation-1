@@ -240,8 +240,14 @@
     gap: 32px !important;
   }
 
+  .logo-wrapper {
+    width: 175px !important;
+    height: 100px !important;
+  }
+
   .client-logo {
-    height: 24px !important;
+    height: 70px !important;
+    max-width: 100% !important;
   }
 
   /* PROVIDE / WHAT WE DO */
@@ -397,7 +403,13 @@
   }
 
   .partner-logo {
-    height: 24px !important;
+    height: 70px !important;
+    max-width: 100% !important;
+  }
+
+  .partner-logo-wrapper {
+    width: 175px !important;
+    height: 100px !important;
   }
 }
 
@@ -622,6 +634,30 @@
 
   .logo-track {
     gap: 24px !important;
+  }
+
+  .logo-wrapper {
+    width: 190px !important;
+    height: 110px !important;
+  }
+
+  .client-logo {
+    height: 80px !important;
+    max-width: 100% !important;
+  }
+
+  .partner-track {
+    gap: 24px !important;
+  }
+
+  .partner-logo {
+    height: 80px !important;
+    max-width: 100% !important;
+  }
+
+  .partner-logo-wrapper {
+    width: 190px !important;
+    height: 110px !important;
   }
 
   /* PROVIDE/WHAT WE DO CARDS */

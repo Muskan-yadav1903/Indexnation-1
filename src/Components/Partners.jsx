@@ -133,7 +133,7 @@ export default function Partners() {
         }}
       >
         {[...logos, ...logos].map((logo, index) => (
-          <div key={index} style={$style.partnerLogoWrapper}>
+          <div key={index} className="partner-logo-wrapper" style={$style.partnerLogoWrapper}>
             <img className="partner-logo" src={logo} alt="partner" style={$style.partnerLogo} />
           </div>
         ))}
